@@ -5,10 +5,10 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="2dp"
     android:layout_marginRight="2dp"
-    android:elevation="4dp"
     android:layout_marginTop="2dp"
-    app:cardUseCompatPadding="true"
-    app:cardCornerRadius="4dp">
+    android:elevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,17 +21,11 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.AppCompatImageView
-                android:id="@+id/post_img"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:scaleType="centerInside"
-                app:srcCompat="@drawable/dummy" />
 
             <LinearLayout
-                android:layout_gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
@@ -44,23 +38,39 @@
                     android:text="Product Name"
                     android:textStyle="bold" />
 
+                <!--price and qunatity-->
 
-                <android.support.v7.widget.AppCompatTextView
-                    android:id="@+id/tvPrice"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:width="1"
+                        android:text="\u20b9 2500"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="qty- 1"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <!--update qunatity button-->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:text="\u20b9 2500"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-
-
-
-                <LinearLayout
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:visibility="gone">
 
                     <android.support.v7.widget.AppCompatButton
                         android:id="@+id/btnPlus"
@@ -75,9 +85,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="1"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
+                        android:text="1"
                         android:textStyle="bold" />
 
                     <android.support.v7.widget.AppCompatButton
@@ -88,35 +98,68 @@
                         android:text="+"
                         android:textColor="@color/white" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Size- M"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Color- black"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
             </LinearLayout>
 
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/post_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dummy" />
 
         </LinearLayout>
 
-      <!--  <View
-            android:layout_width="match_parent"
-            android:layout_height="0.1dp"
-            android:layout_marginTop="5dp"
-            android:background="@color/cardview_dark_background" />
+        <!--  <View
+              android:layout_width="match_parent"
+              android:layout_height="0.1dp"
+              android:layout_marginTop="5dp"
+              android:background="@color/cardview_dark_background" />
 
-        <LinearLayout
-            android:id="@+id/ll_remove"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+          <LinearLayout
+              android:id="@+id/ll_remove"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="10dp"
+              android:layout_marginTop="10dp"
+              android:orientation="horizontal">
 
-            <android.support.v7.widget.AppCompatTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Remove"
-                android:textColor="@color/black" />
+              <android.support.v7.widget.AppCompatTextView
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:text="Remove"
+                  android:textColor="@color/black" />
 
-        </LinearLayout>
--->
+          </LinearLayout>
+  -->
 
     </LinearLayout>
 
