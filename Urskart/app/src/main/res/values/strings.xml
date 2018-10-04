@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UrsKart</string>
+    <string name="su_digiventures_ltd">su digiventures</string>
+    <string name="login">Login</string>
+    <string name="or">or</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="mobile">Mobile</string>
+    <string name="create_account">Create Account</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="wishlist">Wishlist</string>
+    <string name="yourbag">Your Bag</string>
+    <string name="search_product">search Product</string>
+    <string name="urskart">UrsKart.com</string>
+</resources>
