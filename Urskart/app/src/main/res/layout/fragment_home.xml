@@ -6,6 +6,8 @@
     android:paddingLeft="10dp"
     android:focusable="false"
     android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    xml:PageIndicatorView="http://schemas.android.com/apk/res/com.urskart.customviews.MyPageIndicator"
     android:paddingRight="10dp">
 
     <LinearLayout
@@ -31,5 +33,20 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_search_black_24dp"/>
     </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <com.urskart.customviews.MyPageIndicator
+        android:id="@+id/piv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:piv_width="9dp"
+        app:piv_height="9dp"
+        app:piv_spaceBetweenDot="2dp"
+        />
 
 </LinearLayout>

@@ -8,7 +8,16 @@ import android.view.ViewGroup;
 
 import com.urskart.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> {
+
+
+    public CartAdapter()
+    {
+    }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -22,7 +31,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> 
 
     @Override
     public int getItemCount() {
-        return 50;
+        return 10;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

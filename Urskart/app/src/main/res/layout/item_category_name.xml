@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:contentPadding="10dp"
     app:cardUseCompatPadding="true"
+    android:id="@+id/cardview"
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     android:layout_height="wrap_content">

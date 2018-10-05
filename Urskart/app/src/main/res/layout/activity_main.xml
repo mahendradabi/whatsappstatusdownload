@@ -9,7 +9,7 @@
     android:clickable="true"
     android:fitsSystemWindows="true"
     android:focusable="true"
-    tools:openDrawer="close">
+    tools:openDrawer="start">
 
     <LinearLayout
         android:id="@+id/root"
@@ -25,11 +25,15 @@
             android:layout_height="wrap_content" />
 
         <FrameLayout
-            android:id="@+id/flayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/bottom_navigation"
             android:layout_weight="1" >
+        <FrameLayout
+            android:id="@+id/flayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
             <android.support.v7.widget.AppCompatImageView
                 android:id="@+id/img_category"
                 android:layout_width="wrap_content"
@@ -60,6 +64,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+        app:itemBackground="@drawable/drawer_item_bg"
         app:headerLayout="@layout/header"
         app:menu="@menu/drawer_menu" />
 

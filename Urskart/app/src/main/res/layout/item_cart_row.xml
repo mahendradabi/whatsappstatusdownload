@@ -5,9 +5,9 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="2dp"
     android:layout_marginRight="2dp"
-    android:layout_marginTop="2dp"
     android:elevation="4dp"
     app:cardCornerRadius="4dp"
+    app:contentPadding="4dp"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
@@ -21,7 +21,11 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-
+            <android.support.v7.widget.AppCompatCheckBox
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -41,6 +45,7 @@
                 <!--price and qunatity-->
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -50,18 +55,19 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:width="1"
+                        android:width="0dp"
                         android:text="\u20b9 2500"
                         android:textColor="@color/textColor"
-                        android:textStyle="bold" />
+                       />
 
                     <android.support.v7.widget.AppCompatTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="qty- 1"
+                        android:textAllCaps="true"
                         android:textColor="@color/textColor"
-                        android:textStyle="bold" />
+                        />
                 </LinearLayout>
 
 
@@ -100,6 +106,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -111,16 +118,16 @@
                         android:text="Size- M"
                         android:textAllCaps="true"
                         android:textColor="@color/textColor"
-                        android:textStyle="bold" />
+                     />
 
                     <android.support.v7.widget.AppCompatTextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_weight="2"
                         android:text="Color- black"
                         android:textAllCaps="true"
                         android:textColor="@color/textColor"
-                        android:textStyle="bold" />
+                       />
 
                 </LinearLayout>
 

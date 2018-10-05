@@ -69,7 +69,7 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
         View view = navigationView_right.getHeaderView(0);
         categoryList = view.findViewById(R.id.recyclerView);
         categoryList.setLayoutManager(new LinearLayoutManager(this));
-        categoryList.setAdapter(new CategoryAdapter());
+        categoryList.setAdapter(new CategoryAdapter(MainActivity.this));
 
         loadFragment(new HomeFragment());
 
@@ -127,7 +127,15 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
+            case R.id.mycart:
+                bottom_navigation.setSelectedItemId(R.id.action_cart);
+                closeDrawer(Gravity.START);
+                break;
 
+            case R.id.favorite:
+                bottom_navigation.setSelectedItemId(R.id.action_wishlist);
+                closeDrawer(Gravity.START);
+                break;
         }
 
         return true;
@@ -159,5 +167,10 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
                 .beginTransaction().replace(R.id.flayout, fragment)
                 .addToBackStack("home")
                 .commit();
+    }
+
+    public void closeDrawer(int gravity)
+    {
+        mDrawerLayout.closeDrawer(gravity);
     }
 }

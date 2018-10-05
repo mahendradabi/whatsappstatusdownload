@@ -9,6 +9,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
+import com.urskart.utility.Validator;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -51,7 +53,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void userLogin() {
 
         if (isValidate()) {
-            startActivity(new Intent(LoginActivity.this,MainActivity.class));
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
 
         }
     }
@@ -64,6 +66,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         } else if (TextUtils.isEmpty(etPassword.getText().toString())) {
             etPassword.setError("Enter password");
             etPassword.requestFocus();
+            return false;
+        } else if (!Validator.isEmailValid(etEmail.getText().toString())) {
+            etEmail.setError("Enter valid email ID");
+            etEmail.requestFocus();
             return false;
         } else
             return true;

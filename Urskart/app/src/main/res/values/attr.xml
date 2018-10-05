@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="PageIndicatorView">
+        <attr name="piv_count" format="integer"/>
+        <attr name="piv_activeColor" format="color"/>
+        <attr name="piv_nonActiveColor" format="color"/>
+        <attr name="piv_height" format="dimension"/>
+        <attr name="piv_width" format="dimension"/>
+        <attr name="piv_spaceBetweenDot" format="dimension"/>
+
+    </declare-styleable>
+</resources>
