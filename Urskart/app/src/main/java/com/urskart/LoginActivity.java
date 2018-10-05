@@ -51,11 +51,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void userLogin() {
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
 
-        if (isValidate()) {
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        /*if (isValidate()) {
 
-        }
+        }*/
     }
 
     private boolean isValidate() {

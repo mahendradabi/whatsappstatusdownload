@@ -1,52 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingLeft="10dp"
     android:focusable="false"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    xml:PageIndicatorView="http://schemas.android.com/apk/res/com.urskart.customviews.MyPageIndicator"
-    android:paddingRight="10dp">
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    xml:PageIndicatorView="http://schemas.android.com/apk/res/com.urskart.customviews.MyPageIndicator">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:padding="5dp"
         android:background="@drawable/search_background"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="5dp">
 
         <EditText
-            android:padding="3dp"
-            android:text=""
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:background="@color/white"
-            android:hint="@string/search_product" />
+            android:hint="@string/search_product"
+            android:padding="3dp"
+            android:text="" />
+
         <android.support.v7.widget.AppCompatImageView
-            android:layout_gravity="center"
             android:id="@+id/search_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_search_black_24dp"/>
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_search_black_24dp" />
     </LinearLayout>
 
 
-    <android.support.v4.view.ViewPager
-        android:layout_marginTop="5dp"
-        android:id="@+id/viewPager"
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.urskart.customviews.MyPageIndicator
+                android:id="@+id/piv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:piv_height="9dp"
+                app:piv_spaceBetweenDot="2dp"
+                app:piv_width="9dp" />
+        </LinearLayout>
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="200dp"/>
-    <com.urskart.customviews.MyPageIndicator
-        android:id="@+id/piv"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+      >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/splash_background" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:piv_width="9dp"
-        app:piv_height="9dp"
-        app:piv_spaceBetweenDot="2dp"
-        />
+        android:elevation="4dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Your utility ready store"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/myBotton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/blueColor"
+                android:text="shop now" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
 
 </LinearLayout>

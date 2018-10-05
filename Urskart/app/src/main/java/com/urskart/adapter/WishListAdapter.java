@@ -18,29 +18,27 @@ import butterknife.ButterKnife;
 
 public class WishListAdapter extends RecyclerView.Adapter<WishListAdapter.MyViewHolder> {
 
+    public interface OnEmptyList {
+        public void onListEmpty();
+    }
+
     List<Integer> list;
+    OnEmptyList onEmptyList;
 
-    public WishListAdapter()
-    {
+    public WishListAdapter(OnEmptyList onEmptyList) {
+        this.onEmptyList = onEmptyList;
+        list = new ArrayList<>();
+        list.add(1);
+        list.add(1);
+        list.add(1);
 
-        list=new ArrayList<>();
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        list.add(1);
 
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view= LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_wishlist,viewGroup,false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_wishlist, viewGroup, false);
         return new MyViewHolder(view);
     }
 
@@ -60,18 +58,20 @@ public class WishListAdapter extends RecyclerView.Adapter<WishListAdapter.MyView
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-            @BindView(R.id.img_remove)
+        @BindView(R.id.img_remove)
         AppCompatImageView img_remove;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
         }
     }
 
-    private void removeProduct(int position)
-    {
+    private void removeProduct(int position) {
         list.remove(position);
         notifyItemRemoved(position);
-        notifyItemRangeChanged(position,getItemCount());
+        notifyItemRangeChanged(position, getItemCount());
+        if (getItemCount() == 0)
+            onEmptyList.onListEmpty();
     }
 }
