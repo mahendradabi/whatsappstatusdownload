@@ -7,8 +7,8 @@
     android:layout_marginRight="2dp"
     android:elevation="4dp"
     app:cardCornerRadius="4dp"
-    app:contentPadding="4dp"
-    app:cardUseCompatPadding="true">
+    app:cardUseCompatPadding="true"
+    app:contentPadding="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,11 +21,6 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.AppCompatCheckBox
-                android:checked="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"/>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -37,6 +32,7 @@
 
                 <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/post_title"
+                    style="@style/mediumTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Product Name"
@@ -45,29 +41,29 @@
                 <!--price and qunatity-->
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <android.support.v7.widget.AppCompatTextView
                         android:id="@+id/tvPrice"
+                        style="@style/mediumTextView"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:width="0dp"
                         android:text="\u20b9 2500"
-                        android:textColor="@color/textColor"
-                       />
+                        android:textColor="@color/textColor" />
 
                     <android.support.v7.widget.AppCompatTextView
+                        style="@style/mediumTextView"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="qty- 1"
                         android:textAllCaps="true"
-                        android:textColor="@color/textColor"
-                        />
+                        android:textColor="@color/textColor" />
                 </LinearLayout>
 
 
@@ -106,28 +102,28 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal">
 
                     <android.support.v7.widget.AppCompatTextView
+                        style="@style/mediumTextView"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Size- M"
                         android:textAllCaps="true"
-                        android:textColor="@color/textColor"
-                     />
+                        android:textColor="@color/textColor" />
 
                     <android.support.v7.widget.AppCompatTextView
+                        style="@style/mediumTextView"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:text="Color- black"
                         android:textAllCaps="true"
-                        android:textColor="@color/textColor"
-                       />
+                        android:textColor="@color/textColor" />
 
                 </LinearLayout>
 

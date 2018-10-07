@@ -1,11 +1,18 @@
 package com.urskart.utility;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.app.AlertDialog;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
 
 import com.urskart.R;
 
@@ -108,4 +115,6 @@ public class DialogWindow {
         if (componentName != null)
             mContex.startActivity(sendIntent);
     }
+
+
 }

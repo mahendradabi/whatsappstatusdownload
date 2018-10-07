@@ -93,20 +93,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                style="@style/LargeTextView"
                 android:gravity="center"
-                android:text="Your utility ready store"
+                android:text="@string/your_utility_ready_store"
                 android:textAllCaps="true"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_shop_now"
                 style="@style/myBotton"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:backgroundTint="@color/blueColor"
-                android:text="shop now" />
+                android:text="@string/shop_now" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 

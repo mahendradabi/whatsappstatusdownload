@@ -21,6 +21,7 @@
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/tv_product_name"
+            style="@style/mediumTextView"
             android:text="product Name"
             android:textColor="@color/black"
             android:layout_width="match_parent"
@@ -35,6 +36,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                style="@style/mediumTextView"
                 android:textColor="@color/textColor"
                 android:text="\u20b9 123" />
 
@@ -43,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="right"
+                style="@style/mediumTextView"
                 android:textColor="@color/colorPrimary"
                 android:text="55%" />
         </LinearLayout>
