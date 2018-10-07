@@ -89,7 +89,7 @@ implements ViewPager.OnPageChangeListener, View.OnClickListener {
             case R.id.btnAddCart:
                BottomSheetDialog bottomSheetDialog
                        =new BottomSheetDialog(this);
-               bottomSheetDialog.setContentView(R.layout.item_ours_services);
+               bottomSheetDialog.setContentView(R.layout.item_popup_options);
                bottomSheetDialog.show();
                 break;
         }

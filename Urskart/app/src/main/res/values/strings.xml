@@ -21,4 +21,9 @@
     <string name="urskart_services">UrsKart Services</string>
     <string name="cash_on_delivery">Cash On Delivery</string>
     <string name="review_rating"><![CDATA[Review & Rating]]></string>
+    <string name="color">Color</string>
+    <string name="size">Size</string>
+    <string name="submit_your_order">Submit your order</string>
+    <string name="edit">Edit</string>
+    <string name="profile">Profile</string>
 </resources>

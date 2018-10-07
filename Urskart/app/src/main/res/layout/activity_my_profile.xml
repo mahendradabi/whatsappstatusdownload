@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    android:focusableInTouchMode="true"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <EditText
+                android:id="@+id/etName"
+                style="@style/mEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Name"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/mEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/etDob"
+                style="@style/mEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Date of Birth"
+                android:inputType="date"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/etMobile"
+                style="@style/mEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/mobile"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/mEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                style="@style/mEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/register"
+                style="@style/myBotton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/edit" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -26,13 +26,15 @@
             android:text="Total amount $34"
             android:textAllCaps="true"
             android:layout_height="wrap_content" />
+
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_buy_now"
+            style="@style/myBotton"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            style="@style/myBotton"
-            android:text="Buy Now"
             android:layout_marginLeft="2dp"
-            android:background="@color/lightGreenColor"/>
+            android:background="@color/lightGreenColor"
+            android:text="Buy Now" />
     </LinearLayout>
 
 </RelativeLayout>

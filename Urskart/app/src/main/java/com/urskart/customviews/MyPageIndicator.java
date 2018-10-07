@@ -19,7 +19,6 @@ public class MyPageIndicator extends LinearLayout {
     private int height, width, margin;
 
     Drawable active, nonActive;
-
     LayoutParams params;
 
     public MyPageIndicator(Context context, @Nullable AttributeSet attrs) {
@@ -56,7 +55,6 @@ public class MyPageIndicator extends LinearLayout {
 
     }
 
-
     //highlight the selected position
     public void setSelectedPage(int position) {
         for (int i = 0; i < getChildCount(); i++) {
@@ -68,7 +66,6 @@ public class MyPageIndicator extends LinearLayout {
         if (selectedChild != null)
             selectedChild.setBackground(active);
     }
-
 
     //number of pages to show
     public void setIndicator(int mPageCount) {

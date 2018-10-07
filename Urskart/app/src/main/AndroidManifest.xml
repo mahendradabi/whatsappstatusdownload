@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".MyApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
@@ -24,6 +25,11 @@
         <activity android:name=".RegisterActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".ProductDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddAddress"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MyProfileActivity"
             android:screenOrientation="portrait"/>
     </application>
 

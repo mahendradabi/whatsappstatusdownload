@@ -1,5 +1,6 @@
 package com.urskart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -21,7 +22,6 @@ import com.urskart.fragments.HomeFragment;
 import com.urskart.fragments.WishListFragment;
 import com.urskart.utility.BottomNavigationViewHelper;
 
-import java.security.interfaces.RSAKey;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -56,12 +56,6 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
         setToolbar(toolbar);
         setTitle(R.string.urskart);
 
-/*
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.open, R.string.close);
-        toggle.syncState();
-        mDrawerLayout.addDrawerListener(toggle);
-*/
 
         setupBottomNavigation();
 
@@ -136,6 +130,12 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
                 bottom_navigation.setSelectedItemId(R.id.action_wishlist);
                 closeDrawer(Gravity.START);
                 break;
+
+            case R.id.myprofile:
+                startActivity(new Intent(this, MyProfileActivity.class));
+                closeDrawer(Gravity.START);
+
+                break;
         }
 
         return true;
@@ -144,6 +144,13 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.home_profile, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.user_profile)
+            startActivity(new Intent(this, MyProfileActivity.class));
         return true;
     }
 
@@ -169,8 +176,7 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
                 .commit();
     }
 
-    public void closeDrawer(int gravity)
-    {
+    public void closeDrawer(int gravity) {
         mDrawerLayout.closeDrawer(gravity);
     }
 }

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_saved_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btn_continue"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:background="@drawable/drawer_item_bg"
+                        android:layout_width="match_parent"
+                        android:paddingBottom="5dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/LargeTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Shipping Address"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/change_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_back_solid"
+                            android:padding="5dp"
+                            android:text="Change"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_username"
+                        style="@style/mediumTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="ABC Xyz"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_full_address"
+                        style="@style/mediumTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="303 Naveen Tower, Anand Bazar Greater kilash road,old Palasia Indore (MP) 452001" />
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_mobile"
+                        style="@style/mediumTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:text="+91123456789"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/LargeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:background="@drawable/drawer_item_bg"
+                        android:text="Amount to be paid"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/mediumTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sub Total"
+                            android:textColor="@color/black" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_total_credit"
+                            style="@style/mediumTextView     "
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="334.00" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/mediumTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Shipping Charge"
+                            android:textColor="@color/black" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_total_order"
+                            style="@style/mediumTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="50.00"
+
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/mediumTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Total "
+                            android:textColor="@color/black" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_total_pay"
+                            style="@style/mediumTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="384.00" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:text="(inclusive of all taxes)"
+                        android:textColor="@color/lightGreenColor" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_back_solid"
+            android:text="@string/submit_your_order"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_address_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/add_address"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/address"
+                    style="@style/mEditText"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="Add Address"
+                    android:inputType="textMultiLine"
+                    android:maxLines="4"
+                    android:minLines="3" />
+
+                <EditText
+                    android:id="@+id/zipcode"
+                    style="@style/mEditText"
+                    android:hint="Add Pincode"
+                    android:inputType="number"
+                    android:text="" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/city"
+                        style="@style/mEditText"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:hint="City" />
+
+                    <EditText
+                        android:id="@+id/state"
+                        style="@style/mEditText"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:hint="State" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Add your contact details"
+                    android:textAllCaps="true" />
+
+                <EditText
+                    android:id="@+id/fname"
+                    style="@style/mEditText"
+                    android:layout_marginTop="5dp"
+                    android:hint="Your Name" />
+
+
+                <EditText
+                    android:id="@+id/mobile"
+                    style="@style/mEditText"
+                    android:hint="Mobile Number" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/add_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_back_solid"
+            android:text="Add Address"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>
