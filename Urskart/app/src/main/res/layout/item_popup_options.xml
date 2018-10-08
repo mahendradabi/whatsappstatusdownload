@@ -21,7 +21,7 @@
             android:padding="10dp">
 
             <LinearLayout
-
+                android:background="@drawable/drawer_item_bg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -47,7 +47,6 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginRight="5dp"
-                        android:background="@drawable/circle_color_primary"
                         android:gravity="center"
                         android:padding="10dp"
                         android:text="M" />
@@ -57,29 +56,28 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginRight="5dp"
-                        android:background="@drawable/circle_color_primary"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="M" />
+                        android:text="X" />
 
 
                     <android.support.v7.widget.AppCompatTextView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_marginRight="5dp"
-                        android:background="@drawable/circle_color_primary"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="M" />
+                        android:text="XL" />
 
 
                 </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
+                android:background="@drawable/drawer_item_bg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -100,41 +98,38 @@
 
 
                     <android.support.v7.widget.AppCompatTextView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
-                        android:background="@drawable/btn_back_solid"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="" />
+                        android:text="red" />
 
 
                     <android.support.v7.widget.AppCompatTextView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
-                        android:background="@drawable/btn_back_solid"
-                        android:backgroundTint="@color/black"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="" />
+                        android:text="green" />
 
 
                     <android.support.v7.widget.AppCompatTextView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:background="@color/colorPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:padding="10dp" />
+                        android:padding="10dp"
+                        android:text="blue" />
 
 
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
