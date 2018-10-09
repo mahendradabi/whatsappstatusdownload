@@ -81,6 +81,7 @@ implements ViewPager.OnPageChangeListener, View.OnClickListener {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
         if (item.getItemId()==R.id.share)
             DialogWindow.openShareIntent(this,"Product Name \n Download app urskar.com");
         return true;
