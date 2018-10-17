@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.ContentLoadingProgressBar;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,20 +35,32 @@ public class CartFragment extends MyAbstractFragment implements OnEmptyList {
     LinearLayout ll_empty;
     @BindView(R.id.btn_buy_now)
     AppCompatButton btn_buy_now;
+    @BindView(R.id.nestedScroll)
+    NestedScrollView mNestedScrollView;
+    LinearLayoutManager mLayoutManager;
+
+    int visibleItemCount;
+    int totalItemCount;
+    int pastVisiblesItems;
+
+    int pno=0;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_cart,container,false);
+        View view = inflater.inflate(R.layout.fragment_cart, container, false);
         initViews(view);
         initListeners();
-       return view;
+        return view;
     }
 
     @Override
     public void initViews(View view) {
-        ButterKnife.bind(this,view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        ButterKnife.bind(this, view);
+
+        mLayoutManager = new LinearLayoutManager(getActivity());
+        recyclerView.setLayoutManager(mLayoutManager);
+        recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setAdapter(new CartAdapter(this));
     }
 
@@ -55,9 +69,38 @@ public class CartFragment extends MyAbstractFragment implements OnEmptyList {
         btn_buy_now.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            startActivity(new Intent(getActivity(), AddAddress.class));
+                startActivity(new Intent(getActivity(), AddAddress.class));
             }
         });
+
+
+        mNestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+            @Override
+            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+                if (v.getChildAt(v.getChildCount() - 1) != null) {
+                    if ((scrollY >= (v.getChildAt(v.getChildCount() - 1).getMeasuredHeight() - v.getMeasuredHeight())) &&
+                            scrollY > oldScrollY) {
+
+                        visibleItemCount = mLayoutManager.getChildCount();
+                        totalItemCount = mLayoutManager.getItemCount();
+                        pastVisiblesItems = mLayoutManager.findFirstVisibleItemPosition();
+
+                        if (isLoadData()) {
+                            pno++;
+                            if ((visibleItemCount + pastVisiblesItems) >= totalItemCount) {
+                                Log.d("loading", "inserting data..."+pno);
+//                        Load Your Data
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+    }
+
+    private boolean isLoadData() {
+        return true;
     }
 
     @Override
