@@ -5,17 +5,30 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.urskart.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> {
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
+public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> {
+List<Integer> items=new ArrayList<>();
 
     public CartAdapter()
     {
+        items.add(1);
+        items.add(1);
+        items.add(1);
+        items.add(1);
+        items.add(1);
+        items.add(1);
+        items.add(1);
+        items.add(1);
+        items.add(1);
     }
 
     @NonNull
@@ -26,18 +39,34 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
+        holder.ll_remove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                removeItem(position);
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return items.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-
+        @BindView(R.id.ll_remove)
+        LinearLayout ll_remove;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+            ButterKnife.bind(this,itemView);
         }
+    }
+
+    private void removeItem(int position)
+
+    {
+        items.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position,getItemCount());
     }
 }

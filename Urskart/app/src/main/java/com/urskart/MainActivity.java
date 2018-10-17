@@ -8,6 +8,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.AppCompatImageView;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -20,6 +21,8 @@ import com.urskart.adapter.CategoryAdapter;
 import com.urskart.fragments.CartFragment;
 import com.urskart.fragments.HomeFragment;
 import com.urskart.fragments.WishListFragment;
+import com.urskart.sharedpreference.PrefKeys;
+import com.urskart.sharedpreference.PreferenceManger;
 import com.urskart.utility.BottomNavigationViewHelper;
 
 
@@ -41,6 +44,7 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
     AppCompatImageView img_category;
 
     RecyclerView categoryList;
+    AppCompatTextView username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +68,10 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
         categoryList = view.findViewById(R.id.recyclerView);
         categoryList.setLayoutManager(new LinearLayoutManager(this));
         categoryList.setAdapter(new CategoryAdapter(MainActivity.this));
+
+        View leftView=navigationView.getHeaderView(0);
+        username=leftView.findViewById(R.id.username);
+        username.setText(PreferenceManger.getPreferenceManger().getString(PrefKeys.USERNAME));
 
         loadFragment(new HomeFragment());
 
@@ -136,6 +144,14 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
                 closeDrawer(Gravity.START);
 
                 break;
+
+            case R.id.signout:
+                PreferenceManger.getPreferenceManger().clearSession();
+                launchActivity(LoginActivity.class);
+                finish();
+                break;
+
+
         }
 
         return true;

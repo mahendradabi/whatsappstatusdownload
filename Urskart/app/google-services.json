@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "564450160138",
+    "firebase_url": "https://urskart-1a0f0.firebaseio.com",
+    "project_id": "urskart-1a0f0",
+    "storage_bucket": "urskart-1a0f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564450160138:android:060f96c4df295aa0",
+        "android_client_info": {
+          "package_name": "com.urskart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564450160138-mti1ikbugbvml9q5fboho233ih5o62nr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.urskart",
+            "certificate_hash": "b13ad070f1a53e7611d5c98be7e56014994a6865"
+          }
+        },
+        {
+          "client_id": "564450160138-topsuh4sc2q9hs58f5c2q9qknmc05d9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiYOMaQPQpZ6P61sSyZWpc5HC7V53mdLo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564450160138-topsuh4sc2q9hs58f5c2q9qknmc05d9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

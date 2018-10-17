@@ -2,19 +2,24 @@ package com.urskart;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.common.SignInButton;
+import com.urskart.sharedpreference.PrefKeys;
+import com.urskart.sharedpreference.PreferenceManger;
+import com.urskart.social.GooglePlusSign;
 import com.urskart.utility.Validator;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginActivity extends GooglePlusSign implements View.OnClickListener {
     @BindView(R.id.etEmail)
     EditText etEmail;
     @BindView(R.id.etPassword)
@@ -25,17 +30,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @BindView(R.id.login)
     AppCompatButton login;
+    @BindView(R.id.sign_in_button)
+    SignInButton signInButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-        ButterKnife.bind(this);
-
-        register.setOnClickListener(this);
-        login.setOnClickListener(this);
-
+        if (PreferenceManger.getPreferenceManger().getBoolean(PrefKeys.ISLOGIN)) {
+            launchActivity(MainActivity.class);
+            finish();
+        }
+        initViews();
+        initListeners();
     }
 
     @Override
@@ -47,15 +53,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.register:
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
                 break;
+            case R.id.sign_in_button:
+                signIn();
+                break;
         }
     }
 
     private void userLogin() {
-        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        if (isValidate()) {
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
 
-        /*if (isValidate()) {
-
-        }*/
+        }
     }
 
     private boolean isValidate() {
@@ -73,5 +81,38 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             return false;
         } else
             return true;
+    }
+
+    @Override
+    public void initViews() {
+        setContentView(R.layout.activity_login);
+        ButterKnife.bind(this);
+        setupGoogleLogin();
+
+    }
+
+    @Override
+    public void initListeners() {
+        register.setOnClickListener(this);
+        login.setOnClickListener(this);
+        signInButton.setOnClickListener(this);
+    }
+
+    @Override
+    protected void updateUI(GoogleSignInAccount account) {
+        Log.d("mygoogle", "" + account.toJson());
+        if (account != null) {
+
+            String displayName = account.getDisplayName();
+            String email = account.getEmail();
+            String id = account.getId();
+            PreferenceManger preferenceManger = PreferenceManger.getPreferenceManger();
+            preferenceManger.setString(PrefKeys.EMAIL, email);
+            preferenceManger.setString(PrefKeys.USERNAME, displayName);
+            preferenceManger.setBoolean(PrefKeys.ISLOGIN, true);
+            launchActivity(MainActivity.class);
+            finish();
+
+        }
     }
 }
