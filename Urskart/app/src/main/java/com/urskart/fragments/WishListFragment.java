@@ -14,11 +14,12 @@ import android.widget.LinearLayout;
 import com.urskart.MyAbstractFragment;
 import com.urskart.R;
 import com.urskart.adapter.WishListAdapter;
+import com.urskart.myinterface.OnEmptyList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class WishListFragment extends MyAbstractFragment implements WishListAdapter.OnEmptyList {
+public class WishListFragment extends MyAbstractFragment implements OnEmptyList {
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     @BindView(R.id.progressBar)

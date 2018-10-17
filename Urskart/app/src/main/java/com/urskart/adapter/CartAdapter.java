@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.urskart.R;
+import com.urskart.myinterface.OnEmptyList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +18,11 @@ import butterknife.ButterKnife;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> {
 List<Integer> items=new ArrayList<>();
+    OnEmptyList onEmptyList;
 
-    public CartAdapter()
+    public CartAdapter(OnEmptyList onEmptyList)
     {
+        this.onEmptyList = onEmptyList;
         items.add(1);
         items.add(1);
         items.add(1);
@@ -68,5 +71,8 @@ List<Integer> items=new ArrayList<>();
         items.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position,getItemCount());
+        if (getItemCount() == 0)
+            onEmptyList.onListEmpty();
+
     }
 }

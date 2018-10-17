@@ -12,22 +12,25 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.urskart.AddAddress;
 import com.urskart.MyAbstractFragment;
 import com.urskart.R;
 import com.urskart.adapter.CartAdapter;
 import com.urskart.adapter.WishListAdapter;
+import com.urskart.myinterface.OnEmptyList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class CartFragment extends MyAbstractFragment {
+public class CartFragment extends MyAbstractFragment implements OnEmptyList {
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     @BindView(R.id.progressBar)
     ContentLoadingProgressBar progressBar;
-
+    @BindView(R.id.ll_empty)
+    LinearLayout ll_empty;
     @BindView(R.id.btn_buy_now)
     AppCompatButton btn_buy_now;
 
@@ -44,7 +47,7 @@ public class CartFragment extends MyAbstractFragment {
     public void initViews(View view) {
         ButterKnife.bind(this,view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.setAdapter(new CartAdapter());
+        recyclerView.setAdapter(new CartAdapter(this));
     }
 
     @Override
@@ -55,5 +58,10 @@ public class CartFragment extends MyAbstractFragment {
             startActivity(new Intent(getActivity(), AddAddress.class));
             }
         });
+    }
+
+    @Override
+    public void onListEmpty() {
+        ll_empty.setVisibility(View.VISIBLE);
     }
 }

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.urskart.R;
+import com.urskart.myinterface.OnEmptyList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,9 +19,6 @@ import butterknife.ButterKnife;
 
 public class WishListAdapter extends RecyclerView.Adapter<WishListAdapter.MyViewHolder> {
 
-    public interface OnEmptyList {
-        public void onListEmpty();
-    }
 
     List<Integer> list;
     OnEmptyList onEmptyList;
