@@ -1,18 +1,23 @@
 package com.urskart.utility;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.support.v7.app.AlertDialog;
+import android.transition.TransitionManager;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.urskart.R;
 
@@ -28,8 +33,36 @@ public class DialogWindow {
 
     }
 
+    public static void showToast(Context mContex, String msg) {
+        Toast.makeText(mContex, msg, Toast.LENGTH_SHORT)
+                .show();
+    }
+
+    public static void showInfoDialog(Context mContext, String title, String msg) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+        builder.setTitle(title);
+        builder.setMessage(msg);
+        builder.setPositiveButton("Ok", null);
+        builder.create().show();
+    }
 
 
+    public static void hideShowTransition(ViewGroup topView, View view, boolean isShow) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            if (isShow) {
+                TransitionManager.beginDelayedTransition(topView);
+                view.setVisibility(View.VISIBLE);
+            } else {
+
+                TransitionManager.beginDelayedTransition(topView);
+                view.setVisibility(View.GONE);
+            }
+        } else {
+            if (isShow)
+                view.setVisibility(View.VISIBLE);
+            else view.setVisibility(View.GONE);
+        }
+    }
 /*
     public static AlertDialog showForgotDialog(final Context context) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);

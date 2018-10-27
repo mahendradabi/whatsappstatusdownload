@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingPrefix"
     android:background="#e8e8e8"
+    android:id="@+id/ll_top"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -66,6 +67,8 @@
                 android:layout_gravity="right"
                 android:textColor="#ed1c4c"
                 android:textSize="14sp" />
+
+        <include layout="@layout/item_progress_bar"/>
 
         <android.support.v7.widget.AppCompatButton
             android:layout_marginTop="10dp"

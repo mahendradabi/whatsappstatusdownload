@@ -16,8 +16,10 @@
 
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:srcCompat="@drawable/dummy" />
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_product"
+            />
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/tv_product_name"
@@ -36,18 +38,20 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:id="@+id/tv_price"
                 style="@style/mediumTextView"
                 android:textColor="@color/textColor"
-                android:text="\u20b9 123" />
+                android:text="" />
 
             <android.support.v7.widget.AppCompatTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="right"
+                android:id="@+id/tv_discount"
                 style="@style/mediumTextView"
                 android:textColor="@color/colorPrimary"
-                android:text="55%" />
+                android:text="" />
         </LinearLayout>
 
     </LinearLayout>

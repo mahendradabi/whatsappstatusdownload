@@ -13,6 +13,9 @@ import android.view.ViewGroup;
 import com.urskart.MainActivity;
 import com.urskart.R;
 import com.urskart.fragments.ProductListFragment;
+import com.urskart.modal.Category;
+
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -21,11 +24,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyView
 
     Context mContex;
     MainActivity mainActivity;
-
-    public CategoryAdapter(Context mContex) {
+    List<Category> categories;
+    public CategoryAdapter(Context mContex, List<Category> categories) {
         this.mContex = mContex;
         mainActivity = (MainActivity) mContex;
+        this.categories=categories;
     }
+
 
     @NonNull
     @Override
@@ -36,21 +41,21 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyView
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
-        holder.categoryName.setText("Category " + position);
+        holder.categoryName.setText(categories.get(position).getCategoryName());
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mainActivity.closeDrawer(Gravity.RIGHT);
                 mainActivity.loadFragment(ProductListFragment
-                        .getProductListInstance("category " + position));
+                        .getProductListInstance(categories.get(position).getCategoryId()));
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return 50;
+        return categories.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

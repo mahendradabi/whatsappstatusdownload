@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.ContentLoadingProgressBar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.AppCompatTextView;
@@ -21,6 +22,10 @@ import com.urskart.adapter.CategoryAdapter;
 import com.urskart.fragments.CartFragment;
 import com.urskart.fragments.HomeFragment;
 import com.urskart.fragments.WishListFragment;
+import com.urskart.modal.CategoryList;
+import com.urskart.servers.Constant;
+import com.urskart.servers.Requestor;
+import com.urskart.servers.ServerResponse;
 import com.urskart.sharedpreference.PrefKeys;
 import com.urskart.sharedpreference.PreferenceManger;
 import com.urskart.utility.BottomNavigationViewHelper;
@@ -28,8 +33,9 @@ import com.urskart.utility.BottomNavigationViewHelper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import retrofit2.Call;
 
-public class MainActivity extends MyAbstractActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+public class MainActivity extends MyAbstractActivity implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener, ServerResponse {
     @BindView(R.id.drawerLayout)
     DrawerLayout mDrawerLayout;
     @BindView(R.id.navigation)
@@ -45,6 +51,7 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
 
     RecyclerView categoryList;
     AppCompatTextView username;
+    ContentLoadingProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +59,7 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
         setContentView(R.layout.activity_main);
         initViews();
         initListeners();
+        loadCategories();
     }
 
     @Override
@@ -66,11 +74,11 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
 
         View view = navigationView_right.getHeaderView(0);
         categoryList = view.findViewById(R.id.recyclerView);
+        progressBar = view.findViewById(R.id.progressBar);
         categoryList.setLayoutManager(new LinearLayoutManager(this));
-        categoryList.setAdapter(new CategoryAdapter(MainActivity.this));
 
-        View leftView=navigationView.getHeaderView(0);
-        username=leftView.findViewById(R.id.username);
+        View leftView = navigationView.getHeaderView(0);
+        username = leftView.findViewById(R.id.username);
         username.setText(PreferenceManger.getPreferenceManger().getString(PrefKeys.USERNAME));
 
         loadFragment(new HomeFragment());
@@ -192,7 +200,37 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
                 .commit();
     }
 
+    private void loadCategories() {
+        progressBar.setVisibility(View.VISIBLE);
+        Requestor requestor = new Requestor(Constant.GET_CATEGORY, this);
+        requestor.setClassOf(CategoryList.class);
+        Call<String> category = Requestor.apis.getCategory();
+        requestor.requestSendToServer(category);
+
+    }
+
     public void closeDrawer(int gravity) {
         mDrawerLayout.closeDrawer(gravity);
+    }
+
+    @Override
+    public void success(Object o, int code) {
+        if (progressBar != null)
+            progressBar.setVisibility(View.GONE);
+
+        switch (code) {
+            case Constant.GET_CATEGORY:
+                CategoryList catModal=(CategoryList)o;
+                if (catModal!=null&&catModal.getCategories()!=null&&categoryList!=null)
+                    categoryList.setAdapter(new CategoryAdapter(this,catModal.getCategories()));
+
+                break;
+        }
+    }
+
+    @Override
+    public void error(Object o, int code) {
+        if (progressBar != null)
+            progressBar.setVisibility(View.GONE);
     }
 }

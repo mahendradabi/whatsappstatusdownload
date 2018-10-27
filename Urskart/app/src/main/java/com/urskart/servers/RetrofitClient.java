@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 /**
  * Created by xyz on 11-12-2017.
@@ -30,6 +31,7 @@ public class RetrofitClient {
                 }
             });*/
             retrofit = new Retrofit.Builder()
+                    .addConverterFactory(ScalarsConverterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
                     .baseUrl(Constant.HOST_URL)
                   //  .client(httpClient)

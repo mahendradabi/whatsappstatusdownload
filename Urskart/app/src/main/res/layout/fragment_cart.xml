@@ -8,11 +8,18 @@
         android:layout_above="@id/ll_bottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
     <include
         layout="@layout/item_common_recylerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
+        </android.support.v4.widget.NestedScrollView>
     <LinearLayout
         android:id="@+id/ll_empty"
         android:layout_width="match_parent"

@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#e8e8e8"
+    android:id="@+id/ll_top"
     android:orientation="vertical">
 
     <LinearLayout
@@ -30,6 +31,7 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
+        <include layout="@layout/item_progress_bar"/>
 
         <EditText
             android:id="@+id/etName"
@@ -37,10 +39,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:hint="Name"
+            android:hint="First Name"
             android:textSize="14sp" />
 
 
+        <EditText
+            android:id="@+id/etLastName"
+            style="@style/mEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textSize="14sp" />
 
             <EditText
                 style="@style/mEditText"
@@ -64,15 +75,6 @@
             android:inputType="textEmailAddress"
             android:textSize="14sp" />
 
-        <EditText
-            android:id="@+id/etDob"
-            style="@style/mEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Date of Birth"
-            android:inputType="date"
-            android:textSize="14sp" />
 
 
         <EditText
