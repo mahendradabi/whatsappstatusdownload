@@ -10,6 +10,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.urskart.R;
+import com.urskart.modal.Category;
+import com.urskart.utility.Utility;
+
+import java.util.List;
 
 
 /**
@@ -20,16 +24,16 @@ public class SliderPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
-    private  Integer images[];
+    private List<Category> images;
 
-    public SliderPagerAdapter(Context context, Integer[] images) {
+    public SliderPagerAdapter(Context context, List<Category> images) {
         this.context = context;
         this.images=images;
     }
 
     @Override
     public int getCount() {
-        return images.length;
+        return images.size();
     }
 
     @Override
@@ -43,7 +47,8 @@ public class SliderPagerAdapter extends PagerAdapter {
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.itme_slider_img, null);
         ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
-        imageView.setImageResource(images[position]);
+    //    imageView.setImageResource(images[position]);
+        Utility.loadImage(images.get(position).getBanner_image(),imageView);
         ViewPager vp = (ViewPager) container;
         vp.addView(view, 0);
         return view;

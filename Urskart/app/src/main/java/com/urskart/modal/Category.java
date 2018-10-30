@@ -11,6 +11,11 @@ public class Category {
     @Expose
     private String categoryName;
 
+    @SerializedName("banner_image")
+    @Expose
+    private String banner_image;
+
+
     public String getCategoryId() {
         return categoryId;
     }
@@ -21,6 +26,14 @@ public class Category {
 
     public String getCategoryName() {
         return categoryName;
+    }
+
+    public String getBanner_image() {
+        return banner_image;
+    }
+
+    public void setBanner_image(String banner_image) {
+        this.banner_image = banner_image;
     }
 
     public void setCategoryName(String categoryName) {

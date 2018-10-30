@@ -21,6 +21,7 @@ import android.view.View;
 import com.urskart.adapter.CategoryAdapter;
 import com.urskart.fragments.CartFragment;
 import com.urskart.fragments.HomeFragment;
+import com.urskart.fragments.ProductListFragment;
 import com.urskart.fragments.WishListFragment;
 import com.urskart.modal.CategoryList;
 import com.urskart.servers.Constant;
@@ -220,9 +221,11 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
 
         switch (code) {
             case Constant.GET_CATEGORY:
-                CategoryList catModal=(CategoryList)o;
-                if (catModal!=null&&catModal.getCategories()!=null&&categoryList!=null)
-                    categoryList.setAdapter(new CategoryAdapter(this,catModal.getCategories()));
+                CategoryList catModal = (CategoryList) o;
+                if (catModal != null && catModal.getCategories() != null && categoryList != null) {
+                  //  loadFragment(ProductListFragment.getProductListInstance(catModal.getCategories().get(0).getCategoryId()));
+                    categoryList.setAdapter(new CategoryAdapter(this, catModal.getCategories()));
+                }
 
                 break;
         }

@@ -134,7 +134,7 @@ public class DialogWindow {
     public static void shareApp(Context mContext) {
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT, "Download " + mContext.getString(R.string.app_name) + " https://play.google.com/store/apps/details?id=" + mContext.getPackageName());
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "Download " + mContext.getString(R.string.app_name) + ".com https://play.google.com/store/apps/details?id=" + mContext.getPackageName());
         sendIntent.setType("text/plain");
         mContext.startActivity(sendIntent);
     }

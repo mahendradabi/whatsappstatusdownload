@@ -237,6 +237,7 @@
 
             <android.support.v7.widget.AppCompatButton
                 style="@style/myBotton"
+                android:id="@+id/btnAddToFavorite"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="1dp"

@@ -21,6 +21,8 @@ public interface ServerCode {
    int REGISTER_CODE=2;
    int GET_CATEGORY=3;
    int GET_PRODUCTS=4;
+   int ADD_FAVORITE=5;
+   int ADD_CART=6;
 
 
 

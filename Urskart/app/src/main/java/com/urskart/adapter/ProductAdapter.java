@@ -42,7 +42,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
         Product product = products.get(position);
         holder.tv_product_name.setText(product.getProductTitle());
         holder.tv_price.setText(Constant.CURRENCY+" "+product.getProductPrice());
@@ -51,7 +51,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mContex.startActivity(new Intent(mContex, ProductDetailsActivity.class));
+                mContex.startActivity(new Intent(mContex, ProductDetailsActivity.class).putExtra("id",products.get(position).getProductId()));
             }
         });
     }

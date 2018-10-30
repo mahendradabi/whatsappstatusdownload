@@ -12,17 +12,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.urskart.BannerModel;
 import com.urskart.MainActivity;
 import com.urskart.MyAbstractFragment;
 import com.urskart.R;
 import com.urskart.adapter.CartAdapter;
 import com.urskart.adapter.SliderPagerAdapter;
 import com.urskart.customviews.MyPageIndicator;
+import com.urskart.modal.Category;
+import com.urskart.servers.Constant;
+import com.urskart.servers.Requestor;
+import com.urskart.servers.ServerResponse;
+
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import retrofit2.Call;
 
-public class HomeFragment extends MyAbstractFragment implements ViewPager.OnPageChangeListener, View.OnClickListener {
+public class HomeFragment extends MyAbstractFragment implements ViewPager.OnPageChangeListener, View.OnClickListener,
+        ServerResponse {
     @BindView(R.id.viewPager)
     ViewPager viewPager;
     @BindView(R.id.piv)
@@ -31,26 +40,34 @@ public class HomeFragment extends MyAbstractFragment implements ViewPager.OnPage
     AppCompatButton btn_shop_now;
 
     SliderPagerAdapter viewPagerAdapter;
+    List<Category> sliderImages;
 
-    Integer[] sliderImages={R.drawable.dummya,R.drawable.dummy,R.drawable.dummya,R.drawable.dummy};
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_home,container,false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         initViews(view);
         initListeners();
-       return view;
+        return view;
     }
 
     @Override
     public void initViews(View view) {
-        ButterKnife.bind(this,view);
-        viewPagerAdapter = new SliderPagerAdapter(getActivity(),sliderImages);
-        piv.setIndicator(viewPagerAdapter.getCount());
-        viewPager.addOnPageChangeListener(this);
-        viewPager.setAdapter(viewPagerAdapter);
-        btn_shop_now.setOnClickListener(this);
+        ButterKnife.bind(this, view);
+        loadBanners();
+
+    }
+
+
+    private void setupViewpager() {
+        if (sliderImages != null&&viewPager!=null) {
+            viewPagerAdapter = new SliderPagerAdapter(getActivity(), sliderImages);
+            piv.setIndicator(viewPagerAdapter.getCount());
+            viewPager.addOnPageChangeListener(this);
+            viewPager.setAdapter(viewPagerAdapter);
+            btn_shop_now.setOnClickListener(this);
+        }
     }
 
     @Override
@@ -75,13 +92,40 @@ public class HomeFragment extends MyAbstractFragment implements ViewPager.OnPage
 
     @Override
     public void onClick(View view) {
-        switch (view.getId())
-        {
+        switch (view.getId()) {
             case R.id.btn_shop_now:
-                ((MainActivity)getActivity()).loadFragmentBack(
+                ((MainActivity) getActivity()).loadFragmentBack(
                         ProductListFragment.getProductListInstance("Shop Now")
                 );
                 break;
         }
+    }
+
+    @Override
+    public void success(Object o, int code) {
+        switch (code) {
+            case Constant.GET_CATEGORY:
+                BannerModel bannerModel = (BannerModel) o;
+                if (bannerModel != null) {
+                    sliderImages = bannerModel.getBannerList();
+                    if (sliderImages != null) {
+                        setupViewpager();
+                    }
+                }
+                break;
+        }
+    }
+
+    @Override
+    public void error(Object o, int code) {
+
+    }
+
+    private void loadBanners() {
+        Requestor requestor = new Requestor(Constant.GET_CATEGORY, this);
+        requestor.setClassOf(BannerModel.class);
+        Call<String> banners = Requestor.apis.getBanners();
+        requestor.requestSendToServer(banners);
+
     }
 }
