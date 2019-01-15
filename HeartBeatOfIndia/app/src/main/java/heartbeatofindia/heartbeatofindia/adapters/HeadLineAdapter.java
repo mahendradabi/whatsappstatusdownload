@@ -47,6 +47,7 @@ public class HeadLineAdapter extends RecyclerView.Adapter<HeadLineAdapter.MyView
 holder.tv_state_name.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
+
         headLineItemClick.onHeadLineClick(list.get(position).getId());
 
     }
