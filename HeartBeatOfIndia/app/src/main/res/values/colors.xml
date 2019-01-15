@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cb204a</color>
+    <color name="colorPrimaryDark">#cb204a</color>
+    <color name="colorAccent">#de9b60</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <color name="textColor">#f11c24</color>
+    <color name="buttonColor">#388e3c</color>
+
+    <color name="discountTextColor">#22b14c</color>
+    <color name="soldColor">#660000</color>
+
+    <color name="grayColor">#bdbdbd</color>
+    <color name="blueColor">#039be5</color>
+    <color name="lightGreenColor">#57d00f</color>
+</resources>

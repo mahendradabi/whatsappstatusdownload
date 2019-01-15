@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:title="समाचार" />
+
+        <item android:title="अक्स" />
+
+        <item android:title="कृषि" />
+
+        <item android:title="खेल" />
+
+        <item android:title="पंचायत" />
+
+        <item android:title="सहकारिता" />
+
+        <item android:title="यंगिस्तान" />
+
+        <item android:title="धर्म" />
+
+        <item android:title="समाज" />
+
+        <item android:title="पुलिस पक्ष" />
+
+
+    </group>
+</menu>
