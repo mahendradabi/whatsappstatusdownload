@@ -17,9 +17,11 @@ import com.urskart.MainActivity;
 import com.urskart.MyAbstractFragment;
 import com.urskart.R;
 import com.urskart.adapter.CartAdapter;
+import com.urskart.adapter.CategoryAdapter;
 import com.urskart.adapter.SliderPagerAdapter;
 import com.urskart.customviews.MyPageIndicator;
 import com.urskart.modal.Category;
+import com.urskart.modal.CategoryList;
 import com.urskart.servers.Constant;
 import com.urskart.servers.Requestor;
 import com.urskart.servers.ServerResponse;
@@ -39,6 +41,9 @@ public class HomeFragment extends MyAbstractFragment implements ViewPager.OnPage
     @BindView(R.id.btn_shop_now)
     AppCompatButton btn_shop_now;
 
+    @BindView(R.id.recyclerView)
+    RecyclerView categoryList;
+
     SliderPagerAdapter viewPagerAdapter;
     List<Category> sliderImages;
 
@@ -55,13 +60,15 @@ public class HomeFragment extends MyAbstractFragment implements ViewPager.OnPage
     @Override
     public void initViews(View view) {
         ButterKnife.bind(this, view);
-        loadBanners();
 
+        categoryList.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
+        loadBanners();
+        loadCategory();
     }
 
 
     private void setupViewpager() {
-        if (sliderImages != null&&viewPager!=null) {
+        if (sliderImages != null && viewPager != null) {
             viewPagerAdapter = new SliderPagerAdapter(getActivity(), sliderImages);
             piv.setIndicator(viewPagerAdapter.getCount());
             viewPager.addOnPageChangeListener(this);
@@ -104,7 +111,7 @@ public class HomeFragment extends MyAbstractFragment implements ViewPager.OnPage
     @Override
     public void success(Object o, int code) {
         switch (code) {
-            case Constant.GET_CATEGORY:
+            case Constant.GET_BANNERS:
                 BannerModel bannerModel = (BannerModel) o;
                 if (bannerModel != null) {
                     sliderImages = bannerModel.getBannerList();
@@ -113,6 +120,14 @@ public class HomeFragment extends MyAbstractFragment implements ViewPager.OnPage
                     }
                 }
                 break;
+
+            case Constant.GET_CATEGORY:
+                CategoryList catModal = (CategoryList) o;
+                if (catModal != null && catModal.getCategories() != null && categoryList != null) {
+                    categoryList.setAdapter(new CategoryAdapter(getActivity(), catModal.getCategories(),CategoryAdapter.CATEGORYVIEW_HOME));
+                }
+
+                break;
         }
     }
 
@@ -120,9 +135,16 @@ public class HomeFragment extends MyAbstractFragment implements ViewPager.OnPage
     public void error(Object o, int code) {
 
     }
+    private void loadCategory()
+    {
+        Requestor requestor=new Requestor(Constant.GET_CATEGORY,this);
+        requestor.setClassOf(CategoryList.class);
+        Call<String> category = Requestor.apis.getCategory();
+        requestor.requestSendToServer(category);
+    }
 
     private void loadBanners() {
-        Requestor requestor = new Requestor(Constant.GET_CATEGORY, this);
+        Requestor requestor = new Requestor(Constant.GET_BANNERS, this);
         requestor.setClassOf(BannerModel.class);
         Call<String> banners = Requestor.apis.getBanners();
         requestor.requestSendToServer(banners);

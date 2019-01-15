@@ -2,7 +2,6 @@ package com.urskart.adapter;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -66,10 +65,15 @@ public class WishListAdapter extends RecyclerView.Adapter<WishListAdapter.MyView
     }
 
     private void removeProduct(int position) {
-        list.remove(position);
-        notifyItemRemoved(position);
-        notifyItemRangeChanged(position, getItemCount());
-        if (getItemCount() == 0)
-            onEmptyList.onListEmpty();
+        try {
+            list.remove(position);
+            notifyItemRemoved(position);
+            notifyItemRangeChanged(position, getItemCount());
+            if (getItemCount() == 0)
+                onEmptyList.onListEmpty();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
+
 }

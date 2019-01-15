@@ -224,7 +224,8 @@ public class MainActivity extends MyAbstractActivity implements NavigationView.O
                 CategoryList catModal = (CategoryList) o;
                 if (catModal != null && catModal.getCategories() != null && categoryList != null) {
                   //  loadFragment(ProductListFragment.getProductListInstance(catModal.getCategories().get(0).getCategoryId()));
-                    categoryList.setAdapter(new CategoryAdapter(this, catModal.getCategories()));
+                    categoryList.setAdapter(new CategoryAdapter(this, catModal.getCategories(),
+                            CategoryAdapter.CATEGORYVIEW_SIDE));
                 }
 
                 break;

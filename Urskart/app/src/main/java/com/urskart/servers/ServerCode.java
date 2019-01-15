@@ -23,6 +23,7 @@ public interface ServerCode {
    int GET_PRODUCTS=4;
    int ADD_FAVORITE=5;
    int ADD_CART=6;
+   int GET_BANNERS=7;
 
 
 

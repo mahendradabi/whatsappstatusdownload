@@ -10,6 +10,10 @@
     android:paddingRight="10dp"
     xml:PageIndicatorView="http://schemas.android.com/apk/res/com.urskart.customviews.MyPageIndicator">
 
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_common_recylerview"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,6 +41,7 @@
 
 
         <LinearLayout
+            android:layout_marginTop="5dp"
             android:layout_height="0dp"
             android:layout_weight="2"
             android:layout_width="match_parent"

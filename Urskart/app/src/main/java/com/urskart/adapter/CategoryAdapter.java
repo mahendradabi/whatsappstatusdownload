@@ -25,8 +25,15 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyView
     Context mContex;
     MainActivity mainActivity;
     List<Category> categories;
-    public CategoryAdapter(Context mContex, List<Category> categories) {
+
+    public static int CATEGORYVIEW_HOME=1;
+    public static int CATEGORYVIEW_SIDE=2;
+
+    int typeOfView;
+
+    public CategoryAdapter(Context mContex, List<Category> categories,int typeOfView) {
         this.mContex = mContex;
+        this.typeOfView=typeOfView;
         mainActivity = (MainActivity) mContex;
         this.categories=categories;
     }
@@ -35,7 +42,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.MyView
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_category_name, viewGroup, false);
+        View view;
+        if (typeOfView==CATEGORYVIEW_HOME)
+         view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_category_home, viewGroup, false);
+        else
+         view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_category_name, viewGroup, false);
         return new MyViewHolder(view);
     }
 
