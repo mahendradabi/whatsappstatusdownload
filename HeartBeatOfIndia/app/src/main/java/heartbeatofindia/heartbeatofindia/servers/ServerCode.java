@@ -21,6 +21,7 @@ public interface ServerCode {
    int REGISTER_CODE=2;
    int GET_CATEGORY=3;
    int GET_NEWS=4;
+   int GET_ALL_CATEGORY=5;
 
 
 

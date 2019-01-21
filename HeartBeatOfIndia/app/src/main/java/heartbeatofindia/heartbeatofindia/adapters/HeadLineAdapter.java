@@ -48,7 +48,7 @@ holder.tv_state_name.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
 
-        headLineItemClick.onHeadLineClick(list.get(position).getId());
+        headLineItemClick.onHeadLineClick(list.get(position).getId()+"");
 
     }
 });

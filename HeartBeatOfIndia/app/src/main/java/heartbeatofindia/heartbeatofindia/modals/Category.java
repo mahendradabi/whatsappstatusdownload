@@ -6,10 +6,10 @@ import com.google.gson.annotations.SerializedName;
 public class Category {
     @SerializedName("id")
     @Expose
-    private String id;
+    private int id;
     @SerializedName("parent_id")
     @Expose
-    private String parentId;
+    private int parentId;
     @SerializedName("name")
     @Expose
     private String name;
@@ -21,24 +21,35 @@ public class Category {
     private String modified;
     @SerializedName("status")
     @Expose
-    private String status;
+    private int status;
     @SerializedName("sub_cat_status")
     @Expose
     private int sub_cat_status;
+    @SerializedName("cat_img")
+    @Expose
+    private String catImag;
 
-    public String getId() {
+    public void setCatImag(String catImag) {
+        this.catImag = catImag;
+    }
+
+    public String getCatImag() {
+        return catImag;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getParentId() {
+    public int getParentId() {
         return parentId;
     }
 
-    public void setParentId(String parentId) {
+    public void setParentId(int parentId) {
         this.parentId = parentId;
     }
 
@@ -66,11 +77,11 @@ public class Category {
         this.modified = modified;
     }
 
-    public String getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 

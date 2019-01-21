@@ -1,6 +1,7 @@
 package heartbeatofindia.heartbeatofindia.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatImageView;
@@ -20,6 +21,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import heartbeatofindia.heartbeatofindia.MainActivity;
 import heartbeatofindia.heartbeatofindia.R;
+import heartbeatofindia.heartbeatofindia.WebViewActivity;
 import heartbeatofindia.heartbeatofindia.fragments.NewsDetails;
 import heartbeatofindia.heartbeatofindia.modals.NewsPost;
 
@@ -28,9 +30,10 @@ public class RssAdapter extends RecyclerView.Adapter<RssAdapter.MyViewHolder> {
     MainActivity mainActivity;
 
     List<Article> list;
+
     public RssAdapter(Context mContex, List<Article> list) {
         this.mContex = mContex;
-        this.list=list;
+        this.list = list;
         mainActivity = (MainActivity) mContex;
     }
 
@@ -50,6 +53,10 @@ public class RssAdapter extends RecyclerView.Adapter<RssAdapter.MyViewHolder> {
         holder.ll_top.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent intent = new Intent(mContex, WebViewActivity.class);
+                intent.putExtra("url", list.get(position).getLink());
+                mContex.startActivity(intent);
                /* Bundle bundle=new Bundle();
                 bundle.putSerializable("news",list.get(position));
                 NewsDetails newsDetails = new NewsDetails();

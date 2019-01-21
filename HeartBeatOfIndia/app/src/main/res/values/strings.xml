@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">HeartBeatOfIndia</string>
+    <string name="app_full_name">Heart Beat Of India</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
+    <string name="login_text">कृपया लॉग इन करे</string>
 
     <string name="dummyText">भाषा विशेष कम्प्युटर संस्क्रुति स्थिति अधिकांश गटको बलवान वर्णन खरिदने और्४५० वहहर एसलिये लचकनहि प्राधिकरन मुखय नवंबर गोपनीयता बिन्दुओमे मजबुत अपनि विषय उसीएक् वास्तव अन्तरराष्ट्रीयकरन बढाता बाधा लक्ष्य सिद्धांत बलवान दोषसके प्रेरना मेमत समजते</string>
 </resources>

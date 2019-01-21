@@ -17,4 +17,5 @@ public class CategoryModal extends ResponseModal {
     public void setResult(List<Category> result) {
         this.result = result;
     }
+
 }
