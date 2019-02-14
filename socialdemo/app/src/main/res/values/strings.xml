@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SocialDemo</string>
+    <string name="compose_message">Compose Message</string>
+    <string name="friend_on_onourem">Friend On Onourem</string>
+    <string name="outside_onourem">Outside Onourem</string>
+    <string name="write_your_message_here">Write your message here...</string>
+    <string name="privacy">Privacy</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="autodelete">AutoDelete</string>
+</resources>
