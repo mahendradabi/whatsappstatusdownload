@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingLeft="14dp"
+    android:paddingTop="35dp"
+    android:paddingRight="14dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+  <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:paddingBottom="5dp"
+        android:text="User Name"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--  <View
+          android:layout_marginBottom="5dp"
+          android:layout_marginTop="5dp"
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/black"/>-->
+</LinearLayout>
