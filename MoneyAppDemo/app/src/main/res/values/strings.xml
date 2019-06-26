@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MoneyAppDemo</string>
+    <string name="text_name_notification">Currency Running</string>
+
+    <string-array name="select_currency">
+        <item>Select Currency</item>
+        <item>GBP_CHF</item>
+        <item>GBP_JPY</item>
+        <item>GBP_AUD</item>
+        <item>CAD_JPY</item>
+        <item>CAD_CHF</item>
+        <item>CHF_JPY</item>
+        <item>AUD_CHF</item>
+        <item>AUD_CAD</item>
+        <item>USD_CHF</item>
+        <item>USD_JPY</item>
+        <item>EUR_USD</item>
+        <item>EUR_GBP</item>
+        <item>EUR_CAD</item>
+        <item>EUR_CHF</item>
+        <item>EUR_JPY</item>
+        <item>EUR_AUD</item>
+        <item>GBP_USD</item>
+        <item>GBP_CAD</item>
+        <item>GBP_CHF</item>
+        <item>GBP_JPY</item>
+        <item>GBP_AUD</item>
+        <item>CAD_JPY</item>
+        <item>NZD_USD</item>
+        <item>NZD_CAD</item>
+        <item>GBP_NZD</item>
+        <item>EUR_NZD</item>
+        <item>NZD_CHF</item>
+        <item>NZD_JPY</item>
+        <item>AUD_NZD</item>
+
+    </string-array>
+
+</resources>

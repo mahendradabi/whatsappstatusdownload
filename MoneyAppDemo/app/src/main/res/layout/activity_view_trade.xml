@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Currency"
+        android:id="@+id/tv_currency"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Current"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/fl_pin_up"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:background="#0EF980">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_play_arrow_black_24dp" />
+            </FrameLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_pin_up"
+                android:gravity="center"
+                android:text="Pin Up"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/fl_pin_down"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:background="#FFBC37">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_play_arrow_black_24dp" />
+            </FrameLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_pin_down"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="Pin Down"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/fl_pip_up"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:background="#34B6E8">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_pip_up"
+                android:gravity="center"
+                android:text="PIP Up"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+
+            <FrameLayout
+                android:id="@+id/fl_pip_down"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentRight="true"
+                android:background="#FE4145">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_pip_down"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="PIP Down"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:background="#DDDDDD"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:text="0"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:text="Seconds"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
