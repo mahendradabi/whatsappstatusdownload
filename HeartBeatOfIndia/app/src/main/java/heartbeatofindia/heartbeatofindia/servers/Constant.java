@@ -6,7 +6,7 @@ package heartbeatofindia.heartbeatofindia.servers;
 
 public final class Constant implements ServerCode {
     //host url domain name
-    public static final String HOST_URL = "http://disharajsociety.com/";
+    public static final String HOST_URL = "http://heartbeatofindianews.com/";
 
     //api sub segment
     public static final String PATH = "/news/News/";

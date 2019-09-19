@@ -46,6 +46,7 @@ public class UpdateLocalDatabase extends IntentService {
                 if (modal != null) {
                     List<Category> result = modal.getResult();
                     if (result != null) {
+                        categoryDao.deleteAll();
                         for (Category category : result) {
                             heartbeatofindia.heartbeatofindia.dbroom.Category byId = categoryDao.findById(category.getId());
                             heartbeatofindia.heartbeatofindia.dbroom.Category newCat;
@@ -58,7 +59,9 @@ public class UpdateLocalDatabase extends IntentService {
                                 newCat.setSubCatStatus(category.getSub_cat_status());
                                 categoryDao.insertAll(newCat);
                             }
+
                         }
+
 
 
                     }

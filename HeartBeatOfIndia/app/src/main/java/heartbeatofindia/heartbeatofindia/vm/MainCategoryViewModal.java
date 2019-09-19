@@ -7,6 +7,8 @@ import android.arch.lifecycle.ViewModel;
 import java.util.ArrayList;
 import java.util.List;
 
+import heartbeatofindia.heartbeatofindia.dbroom.CategoryDao;
+import heartbeatofindia.heartbeatofindia.dbroom.RoomManager;
 import heartbeatofindia.heartbeatofindia.modals.Category;
 import heartbeatofindia.heartbeatofindia.modals.CategoryModal;
 import heartbeatofindia.heartbeatofindia.servers.Constant;
@@ -18,7 +20,7 @@ public class MainCategoryViewModal extends ViewModel implements ServerResponse {
 
 
     MutableLiveData<List<Category>> categorie;
-
+    CategoryDao categoryDao;
     public MainCategoryViewModal() {
         loadMainCategory();
     }
@@ -26,6 +28,7 @@ public class MainCategoryViewModal extends ViewModel implements ServerResponse {
     public LiveData<List<Category>> getMainCategory() {
         if (categorie == null) {
             categorie = new MutableLiveData<>();
+            categoryDao= RoomManager.getAppDatabase().categoryDao();
         }
         return categorie;
     }
@@ -49,10 +52,20 @@ public class MainCategoryViewModal extends ViewModel implements ServerResponse {
                     List<Category> result = categoryModal.getResult();
                     if (result != null) {
                         categorie.setValue(result);
+                      //  syncCategory(result);
                     }
 
                 }
                 break;
+        }
+
+    }
+
+    private synchronized void syncCategory(List<Category> result) {
+
+        for (Category category:result)
+        {
+             //   category.f
         }
 
     }

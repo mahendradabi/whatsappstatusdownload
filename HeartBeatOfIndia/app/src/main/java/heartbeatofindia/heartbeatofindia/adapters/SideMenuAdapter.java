@@ -16,7 +16,6 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import heartbeatofindia.heartbeatofindia.MainActivity;
 import heartbeatofindia.heartbeatofindia.R;
 import heartbeatofindia.heartbeatofindia.modals.Category;
 
@@ -27,7 +26,7 @@ public class SideMenuAdapter extends RecyclerView.Adapter<SideMenuAdapter.MyView
     OnCategoryClick onCategoryClick;
 
     public interface OnCategoryClick {
-        void onCategoryClicked(boolean isParent, String id);
+        void onCategoryClicked(boolean isParent, String id,int parentId);
     }
 
     public SideMenuAdapter(Context mContext, List<Category> list, OnCategoryClick onCategoryClick) {
@@ -65,8 +64,8 @@ public class SideMenuAdapter extends RecyclerView.Adapter<SideMenuAdapter.MyView
                 public void onClick(View v) {
                     Category category = list.get(position);
                     if (category.getSub_cat_status() == 1)
-                        onCategoryClick.onCategoryClicked(true, category.getId()+"");
-                    else onCategoryClick.onCategoryClicked(false, category.getId()+"");
+                        onCategoryClick.onCategoryClicked(true, category.getId()+"",category.getParentId());
+                    else onCategoryClick.onCategoryClicked(false, category.getId()+"",category.getParentId());
                 }
             });
     }
@@ -91,4 +90,6 @@ public class SideMenuAdapter extends RecyclerView.Adapter<SideMenuAdapter.MyView
             ButterKnife.bind(this, itemView);
         }
     }
+
+
 }

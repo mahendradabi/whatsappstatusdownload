@@ -3,12 +3,15 @@ package heartbeatofindia.heartbeatofindia.adapters;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -24,9 +27,10 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
     MainActivity mainActivity;
 
     List<NewsPost> list;
+
     public NewsAdapter(Context mContex, List<NewsPost> list) {
         this.mContex = mContex;
-        this.list=list;
+        this.list = list;
         mainActivity = (MainActivity) mContex;
     }
 
@@ -40,13 +44,16 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
+        NewsPost newsPost = list.get(position);
+        if (newsPost.getImage() != null && newsPost.getImage().length() > 0)
+            Picasso.get().load(newsPost.getImage()).placeholder(R.mipmap.ic_launcher)
+                    .error(R.mipmap.ic_launcher).into(holder.img_news);
         holder.tv_news_title.setText(list.get(position).getTitle());
-
         holder.ll_top.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle=new Bundle();
-                bundle.putSerializable("news",list.get(position));
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("news", list.get(position));
                 NewsDetails newsDetails = new NewsDetails();
                 newsDetails.setArguments(bundle);
                 mainActivity.loadFragment(newsDetails, true);
@@ -66,6 +73,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.MyViewHolder> 
         LinearLayout ll_top;
         @BindView(R.id.tv_news_title)
         AppCompatTextView tv_news_title;
+        @BindView(R.id.img_news)
+        AppCompatImageView img_news;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);

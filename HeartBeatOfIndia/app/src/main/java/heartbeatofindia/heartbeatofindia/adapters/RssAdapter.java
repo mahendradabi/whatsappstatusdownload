@@ -2,11 +2,12 @@ package heartbeatofindia.heartbeatofindia.adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,8 +23,6 @@ import butterknife.ButterKnife;
 import heartbeatofindia.heartbeatofindia.MainActivity;
 import heartbeatofindia.heartbeatofindia.R;
 import heartbeatofindia.heartbeatofindia.WebViewActivity;
-import heartbeatofindia.heartbeatofindia.fragments.NewsDetails;
-import heartbeatofindia.heartbeatofindia.modals.NewsPost;
 
 public class RssAdapter extends RecyclerView.Adapter<RssAdapter.MyViewHolder> {
     Context mContex;
@@ -48,6 +47,13 @@ public class RssAdapter extends RecyclerView.Adapter<RssAdapter.MyViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
         holder.tv_news_title.setText(list.get(position).getTitle());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            holder.tv_news_des.setText(Html.fromHtml(list.get(position).getDescription().replaceAll("<img.+/(img)*>", ""), Html.FROM_HTML_MODE_LEGACY));
+        } else {
+            holder.tv_news_des.setText(Html.fromHtml(list.get(position).getDescription().replaceAll("<img.+/(img)*>", "")));
+
+        }
+
         Picasso.get().load(list.get(position).getImage()).into(holder.img_news);
 
         holder.ll_top.setOnClickListener(new View.OnClickListener() {
@@ -57,11 +63,7 @@ public class RssAdapter extends RecyclerView.Adapter<RssAdapter.MyViewHolder> {
                 Intent intent = new Intent(mContex, WebViewActivity.class);
                 intent.putExtra("url", list.get(position).getLink());
                 mContex.startActivity(intent);
-               /* Bundle bundle=new Bundle();
-                bundle.putSerializable("news",list.get(position));
-                NewsDetails newsDetails = new NewsDetails();
-                newsDetails.setArguments(bundle);
-                mainActivity.loadFragment(newsDetails, true);*/
+
 
             }
         });
@@ -78,6 +80,8 @@ public class RssAdapter extends RecyclerView.Adapter<RssAdapter.MyViewHolder> {
         LinearLayout ll_top;
         @BindView(R.id.tv_news_title)
         AppCompatTextView tv_news_title;
+        @BindView(R.id.tv_news_des)
+        AppCompatTextView tv_news_des;
         @BindView(R.id.img_news)
         AppCompatImageView img_news;
 

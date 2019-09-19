@@ -1,10 +1,16 @@
 package heartbeatofindia.heartbeatofindia.servers;
 
 
+import android.support.annotation.NonNull;
 import android.util.Log;
 
 import com.google.gson.Gson;
 
+import java.io.File;
+
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -96,6 +102,22 @@ public class Requestor {
     }
 
 
+    @NonNull
+    public static RequestBody getRequestBody(String value) {
+        return RequestBody.create(MultipartBody.FORM, value);
+    }
+    @NonNull
+    public static MultipartBody.Part prepareFilePart(String partName, File file) {
+        // create RequestBody instance from file
+        if (file == null) return null;
+        RequestBody requestFile =
+                RequestBody.create(
+                        MediaType.parse("multipart/form-data"),
+                        file
+                );
+        // MultipartBody.Part is used to send also the actual file name
+        return MultipartBody.Part.createFormData(partName, file.getName(), requestFile);
+    }
 
 
 }

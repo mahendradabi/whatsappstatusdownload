@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31f06429-0dc8-4ce0-a155-9848b1b0a617" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/ic_launcher-web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/LoginActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/ProductDetailsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/RegisterActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/SampleActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/SplashActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/Utils/DialogWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/abstractactivity/BaseActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/abstractactivity/MyAbstractActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/abstractactivity/MyAbstractFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/abstractactivity/MyApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/abstractactivity/PrefKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/abstractactivity/PreferenceManger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/adapters/CartAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/adapters/CategoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/adapters/ProductAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/adapters/ViewPagerFragmentAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/adapters/ViewPagerSliderAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/fragments/FragmentCarttList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/fragments/FragmentHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/java/com/agrohome/shop/fragments/FragmentProductList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/anim/item_animation_fall_down.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/anim/layout_anim_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/anim/layout_animation_fall_down.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/anim/slide_from_right_anim.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/anim/zoom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/anim/zoom_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/button_cirlce_go.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/buttonstyle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/default_dot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/dot_setter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/edittext_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/edittext_broder_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/ic_keyboard_arrow_right_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/ic_link_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/ic_person_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/ic_share_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/ic_shopping_cart_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/selected_dot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/vc_contact.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/vc_logout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/drawable/vc_order.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/activity_cart_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/activity_product_details.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/common_progressbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/item_cart_row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/item_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/item_product.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/item_slider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/item_viewpager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/recyclerview_common.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/layout/toolbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/menu/drawer_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/menu/item_home_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AgroHomeShop/app/src/main/res/values/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ChampHunt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/ActivityAdFull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/ActivityAdPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/CustomAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/ViewPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/fragments/FragmentCategoryList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/Ad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/AdListModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/PostAdModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/webs/AppConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/webs/WebEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/webs/WebListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/addd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/logo_gif.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_ad_post.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_full_ad.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_news_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/custom_spinner_items.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/list_item_summary.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/raw/en_pos_maxent.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/raw/en_sent.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/raw/en_token.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/raw/extended_stopwords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/raw/stopwords.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/values/array.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/heartbeatofindia/heartbeatofindia/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/activity/AbstractActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/activity/AbstractFormActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/activity/AbstractImageSelectionActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/activity/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/activity/RelationActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/activity/Splash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/co/ActivityModelCO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/co/NetworkActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/co/NetworkResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/co/RvImageCO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/co/SignUpRequestCO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/co/UserCO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/co/UserThemeCO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/AnimUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/AppDbUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/AppInteractionInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/AppUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/AppValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/Base64CommonsCodec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/Base64Java.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/ConnectPrivateCloudBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/ConnectPrivateCloudVolley.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/DbHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/DbOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/HttpMultipartUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/LruBitmapCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/Measurement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/OkHttp3CountingFileRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/ServerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/StandardCharsets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/TimeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/UserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/common/Utilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/constants/IConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/constants/IErrorCodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/constants/IPreferences.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/constants/IReqParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/constants/ISysCodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/constants/ISysConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/constants/NetworkInteractionActivities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/contentprovider/AppSearchRecentSuggestionsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/fragment/AbstractDialogFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/fragment/AbstractFormDialogFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/fragment/AbstractFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/fragment/AbstractFragmentPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/fragment/AbstractFragmentStatePagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/fragment/AppDatePickerDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/fragment/CustomProgressDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/impl/AbstractRVAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/impl/AutoSpanGridRV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/impl/OnLoadMoreListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/view/cEditText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/java/com/onourem/android/view/cTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/res/drawable/answerquestion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/res/drawable/askquestion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OnorumGame/app/src/main/res/drawable/onetomrulelcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/FragmentSaleRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/MapBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/SalesRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/VolleyMultipartRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/abstractactivity/BaseActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/abstractactivity/MyAbstractActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/abstractactivity/MyAbstractFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/model/Farmer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/model/FarmerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/model/FarmerModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/model/ResponseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/sales/FarmerList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/servers/Apis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/servers/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/servers/Requestor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/servers/RetrofitClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/servers/ServerCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/java/com/ssl/agro/servers/ServerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/res/drawable/ic_map_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/res/drawable/ic_person_add_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/res/layout/activity_sales_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/res/layout/app_bar_sale_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/res/layout/fargment_farmer_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/res/layout/fragment_sale_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/res/layout/item_farmer_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/res/layout/nav_header_sales.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../agro/SSLAgro2/app/src/main/res/menu/sales_drawer_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ahaarDriver/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ahaarDriver/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ahaarDriver/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ahaarDriver/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ahaarDriver/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ahaarDriver/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ahaarDriver/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ahaarDriver/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ahaarDriver/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice/constrainlayout/app/src/main/java/com/mahi/contraintparactise/MyApp.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice/constrainlayout/app/src/main/java/com/mahi/contraintparactise/Post.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice/constrainlayout/app/src/main/java/com/mahi/contraintparactise/PostAdatper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice/constrainlayout/app/src/main/res/drawable/ic_account_circle_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice/constrainlayout/app/src/main/res/drawable/ic_bookmark_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice/constrainlayout/app/src/main/res/drawable/ic_keyboard_arrow_down_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice/constrainlayout/app/src/main/res/drawable/ic_thumb_up_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../practice/constrainlayout/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/androidTest/java/com/mahi/socialdemo/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/ActivityDialogInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/ActivityFriend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/ActivityStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/CategorySelectionActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/DummyData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/FragmentBottomSheetDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/PrivacySelectionActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/adapter/AdapterFriendRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/adapter/AdapterStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/adapter/CategoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/adapter/PrivacyAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/adapter/SearchFriendAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/adapter/SelectedFriendAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/adapter/WatchListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/customviews/TriangleShapeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/customviews/VerticalTextView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/models/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/models/Friends.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/models/Privacy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/annoying.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/button_info_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/dd_public_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/dd_receivers_only.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/dd_selected_final.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/dialgo_info_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/dropdown_friends_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/gray_circle_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/ic_arrow_point.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/ic_check_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/ic_check_white.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/ic_close_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/ic_info_outline_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/ic_lock_outline_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/ic_trianlge_arrow.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/infoicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/name_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/solid_dark_friend_done.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/solid_rounded_maxradius_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/solid_white_rounded_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/theme_color_rounded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/theme_color_solid.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/theme_color_status_item_gb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/tile_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/triangle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/upload_imag_placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/vc_feed.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/vc_heart.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/vc_infoicon.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/vc_inviteme.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/vc_plantnurishment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/vc_socialmindset.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/watch_edit_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/white_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/font/chalkduster.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/font/myfont.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/activity_bootom_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/activity_friends.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/activity_second_module.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/activity_status.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/dialog_bottom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/dialog_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/dialog_select_category.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/dialog_select_privacy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_bottom_sheet_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_category.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_common_recylerview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_compose_message_search_friend.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_divider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_friend_request.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_frined_row.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_select_privacy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_selected_firends.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_status.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_watch_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/item_watch_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../socialdemo/app/src/test/java/com/mahi/socialdemo/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/androidTest/java/com/mahi/agro/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/java/com/mahi/agro/LoginActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/java/com/mahi/agro/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/java/com/mahi/agro/abstractactivity/BaseActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/java/com/mahi/agro/abstractactivity/MyAbstractActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/java/com/mahi/agro/abstractactivity/MyAbstractFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/java/com/mahi/agro/abstractactivity/MyApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/java/com/mahi/agro/abstractactivity/PrefKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/java/com/mahi/agro/abstractactivity/PreferenceManger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/drawable-v24/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/drawable/button_cirlce_go.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/drawable/buttonstyle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/drawable/edittext_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/drawable/ic_location_on_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/drawable/ic_menu_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/layout/header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/layout/toolbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/menu/drawer_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/menu/menu_bottom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/app/src/test/java/com/mahi/agro/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslAgro/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslnewagro/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslnewagro/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslnewagro/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslnewagro/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslnewagro/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslnewagro/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslnewagro/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslnewagro/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../sslnewagro/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/WebViewActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/WebViewActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/NewsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/NewsAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/RssAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/RssAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/SideMenuAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/SideMenuAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/coreactivity/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/coreactivity/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/dbroom/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/dbroom/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/dbroom/RoomManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/dbroom/RoomManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/fragments/HeadLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/fragments/HeadLines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/fragments/NewsDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/fragments/NewsDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Apis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Apis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Requestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Requestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/ServerCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/ServerCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/vm/MainCategoryViewModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/vm/MainCategoryViewModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/vm/UpdateLocalDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/vm/UpdateLocalDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_webview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_webview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_news_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_news_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/item_common_recylerview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/item_common_recylerview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/item_news.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/item_news.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/news_fragment_headline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/news_fragment_headline.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/SelectedCurrencyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/SelectedCurrencyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/ViewCurrentTradeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/ViewCurrentTradeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/adapter/SelectedCurrencyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/adapter/SelectedCurrencyAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/models/Bid.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/models/Bid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/models/UpdateModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/java/com/money/app/models/UpdateModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/layout/activity_selected_currency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/layout/activity_selected_currency.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/layout/activity_view_trade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/layout/activity_view_trade.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/layout/item_selected_currency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/layout/item_selected_currency.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MoneyAppDemo/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Urskart/.idea/assetWizardSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Urskart/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../Urskart/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Urskart/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Urskart/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Urskart/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Urskart/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Urskart/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Urskart/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Urskart/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Urskart/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Urskart/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Urskart/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Urskart/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Urskart/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/java/com/ahaar/driver/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/java/com/ahaar/driver/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/java/com/ahaar/driver/abstractactivity/BaseActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/java/com/ahaar/driver/abstractactivity/BaseActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ahaarDriver/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/ComposeMessageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/ComposeMessageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/java/com/mahi/socialdemo/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/solid_dark_rounded_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/drawable/solid_dark_rounded_bg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/activity_compose.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/activity_compose.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../socialdemo/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/java/com/mahi/agro/LoginActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/java/com/mahi/agro/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/java/com/mahi/agro/abstractactivity/BaseActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/java/com/mahi/agro/abstractactivity/MyAbstractActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/java/com/mahi/agro/abstractactivity/MyAbstractFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/java/com/mahi/agro/abstractactivity/MyApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/java/com/mahi/agro/abstractactivity/PrefKeys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/java/com/mahi/agro/abstractactivity/PreferenceManger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/layout/header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/layout/header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/menu/drawer_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/menu/drawer_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sslnewagro/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../sslnewagro/build.gradle" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1322498754">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="gif" value="1" />
+          <entry key="gradle" value="15" />
+          <entry key="java" value="117" />
+          <entry key="jpg" value="1" />
+          <entry key="png" value="9" />
+          <entry key="pro" value="2" />
+          <entry key="properties" value="3" />
+          <entry key="xml" value="37" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="Groovy" value="15" />
+          <entry key="Image" value="11" />
+          <entry key="JAVA" value="117" />
+          <entry key="ProGuard File" value="2" />
+          <entry key="Properties" value="3" />
+          <entry key="XML" value="37" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gradle" value="7" />
+          <entry key="java" value="3155" />
+          <entry key="xml" value="761" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="7" />
+          <entry key="JAVA" value="3155" />
+          <entry key="XML" value="761" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proguard-rules.pro">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-283" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../settings.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getMainCategory</find>
+      <find>UpdateLocalDatabase</find>
+      <find>ll_home</find>
+      <find>imgAD</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/NewsAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/AdListModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/ServerCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/Ad.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/news_fragment_headline.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragment_news_details.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/fragments/NewsDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/vm/MainCategoryViewModal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/vm/UpdateLocalDatabase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/dbroom/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/ResponseModal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/PostAdModel.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_ad_post.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Apis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Requestor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/ActivityAdPost.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_full_ad.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/custom_spinner_items.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/CustomAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/ActivityAdFull.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/fragments/HeadLines.java" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/RssAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/item_news.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/../build.gradle" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="HeartBeatOfIndia" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="e9137016:NonAndroidModuleNode" />
+            </path>
+            <path>
+              <item name="HeartBeatOfIndia" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="Nexus_5X_API_27 [emulator-5554]" />
+    <property name="DEBUGGABLE_PROCESS" value="heartbeatofindia.heartbeatofindia" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android.project.structure.last.selected" value="app" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="device.picker.selection" value="192.168.1.7:5555" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="F:/keystore" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="heartbeatofindia.heartbeatofindia" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\projects\android\HeartBeatOfIndia\app\src\main\res\drawable" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31f06429-0dc8-4ce0-a155-9848b1b0a617" name="Default Changelist" comment="" />
+      <created>1549989502247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549989502247</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17972973" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49932885" weight="0.49411765" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" weight="0.3929078" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50067115" side_tool="true" weight="0.7716312" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" visible="true" weight="0.32794118" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Flutter Performance" order="9" side_tool="true" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.32905406" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Flutter Inspector" order="6" />
+      <window_info anchor="right" id="Flutter Outline" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17986578" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49932885" weight="0.54468083" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" weight="0.3929078" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50067115" side_tool="true" weight="0.7716312" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.3295302" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/LoginActivity.java</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/LoginActivity.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/LoginActivity.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>response.body</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>gson.fromJson(response.body.toString(),classOf)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>o</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/WebViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="38" column="25" selection-start-line="37" selection-start-column="8" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/PostAdModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_ad_post.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Requestor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="109" column="24" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/generated/source/apt/debug/heartbeatofindia/heartbeatofindia/adapters/HeadLineAdapter$MyViewHolder_ViewBinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/HeadLineAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Apis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/custom_spinner_items.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/CustomAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="14" column="12" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/ActivityAdPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_full_ad.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/ActivityAdFull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/servers/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/toolbar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/news_fragment_headline.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/NewsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rssparser-2.0.1.aar/e2050f0e836ff1bc04a858168f71d3a2/jars/classes.jar!/com/prof/rssparser/Article.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/NewsPost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/RssAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="50" column="121" selection-start-line="50" selection-start-column="121" selection-end-line="50" selection-end-column="121" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2309#2310#0" expanded="true" />
+            <element signature="e#2343#2344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/modals/NewsPostModal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/text/Html.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="194" column="49" selection-start-line="194" selection-start-column="49" selection-end-line="194" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/item_news.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/fragments/HeadLines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="120" column="56" selection-start-line="120" selection-start-column="56" selection-end-line="120" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/header.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/adapters/SideMenuAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="145" column="36" selection-start-line="145" selection-start-column="36" selection-end-line="145" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/heartbeatofindia/heartbeatofindia/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="108" column="28" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_launcher_foreground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/addd.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable-v24/ic_launcher_foreground.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher_foreground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/logo_gif.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/ic_keyboard_arrow_right_black_24dp.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -5,11 +5,15 @@ package heartbeatofindia.heartbeatofindia.servers;
  * */
 
 
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.Multipart;
 import retrofit2.http.POST;
+import retrofit2.http.Part;
 
 public interface Apis {
 
@@ -37,6 +41,19 @@ public interface Apis {
 
     @GET(Constant.PATH+"getAllCategory")
     Call<String> getAllCategory();
+
+    @GET(Constant.PATH+"addCategory")
+    Call<String> addCategory();
+
+    @FormUrlEncoded
+    @POST(Constant.PATH+"getadbycategory")
+    Call<String> getAdByCategory(@Field("category_id") String categoryid);
+
+    @Multipart
+    @POST(Constant.PATH+"insert_ad")
+    Call<String> inserAd(@Part("categoryid") RequestBody categoryid,
+                         @Part("url") RequestBody url,
+                         @Part MultipartBody.Part user_pic );
 
 
 }

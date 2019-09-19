@@ -11,6 +11,8 @@ import android.view.animation.AnimationUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import heartbeatofindia.heartbeatofindia.sharedpreference.PrefKeys;
+import heartbeatofindia.heartbeatofindia.sharedpreference.PreferenceManger;
 
 public class SplashActivity extends AppCompatActivity {
     Animation animation;
@@ -28,9 +30,13 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                if (PreferenceManger.getPreferenceManger().getBoolean(PrefKeys.ISLOGIN))
+                    startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                else
+                    startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+
                 finish();
             }
-        },2500);
+        },5500);
     }
 }

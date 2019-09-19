@@ -7,7 +7,7 @@ public class RoomManager {
     private static AppDatabase appDatabase;
 
     public static void initRoomManager(Context context) {
-        appDatabase = Room.databaseBuilder(context, AppDatabase.class, "news").build();
+        appDatabase = Room.databaseBuilder(context, AppDatabase.class, "news").allowMainThreadQueries().build();
     }
 
     public static AppDatabase getAppDatabase() {

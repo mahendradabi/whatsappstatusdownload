@@ -8,31 +8,36 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/state_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <include
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/ll_ad_section"
-        layout="@layout/item_common_recylerview" />
-
-    <LinearLayout
-        android:id="@+id/ll_ad_section"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:visibility="gone" />
 
-        <TextView
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/item_common_recylerview"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@color/white"
-            android:gravity="center"
-            android:text="Ad Goes here.."
-            android:textColor="@color/black" />
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_ad_section" />
 
-    </LinearLayout>
-</RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_ad_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_ad"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                android:gravity="center"
+             />
+
+        </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

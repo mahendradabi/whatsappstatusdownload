@@ -2,6 +2,7 @@ package heartbeatofindia.heartbeatofindia.coreactivity;
 
 import android.content.Intent;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
@@ -57,6 +58,17 @@ public class BaseActivity extends AppCompatActivity {
     public void loadFragment(Fragment fragment,int containerId) {
         getSupportFragmentManager()
                 .beginTransaction().replace(containerId, fragment)
+                .commit();
+    }
+
+    public void loadFragmentLayoutBack(Fragment fragment,int containerId,boolean addToBack)
+    {
+        FragmentTransaction fmt = getSupportFragmentManager().beginTransaction();
+        if (addToBack)
+            fmt.addToBackStack("subcategory");
+
+
+        fmt.replace(containerId, fragment)
                 .commit();
     }
 

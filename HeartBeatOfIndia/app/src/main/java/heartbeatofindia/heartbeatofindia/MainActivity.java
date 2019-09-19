@@ -4,7 +4,9 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -23,10 +25,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import heartbeatofindia.heartbeatofindia.adapters.SideMenuAdapter;
 import heartbeatofindia.heartbeatofindia.coreactivity.MyAbstractActivity;
+import heartbeatofindia.heartbeatofindia.dbroom.CategoryDao;
+import heartbeatofindia.heartbeatofindia.dbroom.RoomManager;
+import heartbeatofindia.heartbeatofindia.fragments.FragmentCategoryList;
 import heartbeatofindia.heartbeatofindia.fragments.HeadLines;
+import heartbeatofindia.heartbeatofindia.modals.AdListModel;
 import heartbeatofindia.heartbeatofindia.modals.Category;
 import heartbeatofindia.heartbeatofindia.modals.CategoryModal;
-import heartbeatofindia.heartbeatofindia.modals.ResponseModal;
 import heartbeatofindia.heartbeatofindia.servers.Constant;
 import heartbeatofindia.heartbeatofindia.servers.Requestor;
 import heartbeatofindia.heartbeatofindia.servers.ServerResponse;
@@ -38,7 +43,7 @@ import retrofit2.Call;
 
 public class MainActivity extends MyAbstractActivity implements ServerResponse, SideMenuAdapter.OnCategoryClick {
     @BindView(R.id.drawerLayout)
-    DrawerLayout mDrawerLayout;
+    public DrawerLayout mDrawerLayout;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.recyclerView)
@@ -49,11 +54,23 @@ public class MainActivity extends MyAbstractActivity implements ServerResponse, 
     AppCompatTextView tv_menu_home;
     @BindView(R.id.ll_home)
     LinearLayout ll_home;
+    @BindView(R.id.ll_ad_post)
+    LinearLayout ll_ad_post;
+
+    public static String clickID;
 
 
-    List<String> saveClicks = new ArrayList<>();
+    public static List<Integer> saveClicks = new ArrayList<>();
 
     MainCategoryViewModal mainCategoryViewModal;
+
+    CategoryDao categoryDao;
+
+    @BindView(R.id.tabLyout1)
+    TabLayout tabLayout1;
+    @BindView(R.id.tabLyout2)
+    TabLayout tabLayout2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +90,8 @@ public class MainActivity extends MyAbstractActivity implements ServerResponse, 
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        setTitle("Heart Beat of India");
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         //   recyclerView.setAdapter(new SideMenuAdapter());
 
@@ -84,9 +103,14 @@ public class MainActivity extends MyAbstractActivity implements ServerResponse, 
                 recyclerView.setAdapter(new SideMenuAdapter(MainActivity.this, categories, this));
             }
         });
+
+        categoryDao = RoomManager.getAppDatabase().categoryDao();
+
         loadFragment(new HeadLines(), R.id.flayout);
 
         loadAllCategory();
+
+        loadFragment(FragmentCategoryList.getInstace("0"), R.id.fl_category);
     }
 
     private void loadAllCategory() {
@@ -98,15 +122,93 @@ public class MainActivity extends MyAbstractActivity implements ServerResponse, 
     @Override
     public void initListeners() {
 
+        tabLayout1.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                int cid = (Integer) tab.getTag();
+                tabLayout2.removeAllTabs();
+                if (cid != 0) {
+                    heartbeatofindia.heartbeatofindia.dbroom.Category byId = categoryDao.findById(cid);
+                    if (byId != null && byId.getSubCatStatus() == 1) {
+                        List<heartbeatofindia.heartbeatofindia.dbroom.Category> allCateByParentID = categoryDao.getAllCateByParentID(byId.getCid());
+                        for (heartbeatofindia.heartbeatofindia.dbroom.Category category : allCateByParentID) {
+                            TabLayout.Tab tab1 = tabLayout2.newTab().setText(category.getName());
+                            tab1.setTag(category.getCid());
+                            if (saveClicks.size() > 0 && saveClicks.get(1) != null && saveClicks.get(1).equals(category.getCid()))
+                                tab1.select();
+                            tabLayout2.addTab(tab1);
+                        }
+                        tabLayout2.setVisibility(View.VISIBLE);
+                    } else {
+                        tabLayout2.removeAllTabs();
+                        tabLayout2.setVisibility(View.GONE);
+                        HeadLines headLines = new HeadLines();
+                        Bundle bundle = new Bundle();
+                        bundle.putString("id", cid + "");
+                        headLines.setArguments(bundle);
+                        loadFragment(headLines, false);
+                    }
+
+                }
+
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
+        tabLayout2.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                HeadLines headLines = new HeadLines();
+                Bundle bundle = new Bundle();
+                bundle.putString("id", tab.getTag().toString() + "");
+                headLines.setArguments(bundle);
+                loadFragment(headLines, false);
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
         ll_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                tabLayout1.setVisibility(View.GONE);
+                tabLayout2.setVisibility(View.GONE);
                 loadFragment(new HeadLines(), R.id.flayout);
                 mDrawerLayout.closeDrawer(Gravity.START);
 
 
             }
         });
+
+        ll_ad_post.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tabLayout1.setVisibility(View.GONE);
+                tabLayout2.setVisibility(View.GONE);
+                startActivity(new Intent(MainActivity.this, ActivityAdPost.class));
+                mDrawerLayout.closeDrawer(Gravity.START);
+
+
+            }
+        });
+
 
         if (!PreferenceManger.getPreferenceManger().getBoolean(PrefKeys.ISLOGIN))
             tv_login.setOnClickListener(new View.OnClickListener() {
@@ -160,7 +262,9 @@ public class MainActivity extends MyAbstractActivity implements ServerResponse, 
     }
 
     @Override
-    public void onCategoryClicked(boolean isParent, String id) {
+    public void onCategoryClicked(boolean isParent, String id, int parentID) {
+
+        saveClicks.add(parentID);
         if (isParent)
             getSideMenus(id);
         else {
@@ -169,8 +273,6 @@ public class MainActivity extends MyAbstractActivity implements ServerResponse, 
                 LiveData<List<Category>> mainCategory = mainCategoryViewModal.getMainCategory();
                 if (mainCategory != null && mainCategory.getValue() != null)
                     recyclerView.setAdapter(new SideMenuAdapter(MainActivity.this, mainCategory.getValue(), this));
-
-
             }
             HeadLines headLines = new HeadLines();
             Bundle bundle = new Bundle();
@@ -181,10 +283,41 @@ public class MainActivity extends MyAbstractActivity implements ServerResponse, 
 
     }
 
+
     public void loadFragment(Fragment fragment, boolean addBackStack) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         if (addBackStack)
             fragmentTransaction.addToBackStack("home");
         fragmentTransaction.replace(R.id.flayout, fragment).commit();
     }
+
+    public void setTab1(List<heartbeatofindia.heartbeatofindia.dbroom.Category> list) {
+        removeTabs1();
+        int postiong = 0;
+        int selectedTabPostion = -1;
+        for (heartbeatofindia.heartbeatofindia.dbroom.Category category : list) {
+            TabLayout.Tab tab = tabLayout1.newTab().setText(category.getName());
+            tab.setTag(category.getCid());
+            if (clickID.equals(category.getCid() + "")) {
+                selectedTabPostion = postiong;
+            }
+            tabLayout1.addTab(tab);
+            postiong++;
+        }
+
+        if (selectedTabPostion > -1)
+            tabLayout1.getTabAt(selectedTabPostion).select();
+
+        tabLayout1.setVisibility(View.VISIBLE);
+    }
+
+    public void removeTabs1() {
+        if (tabLayout1 != null && tabLayout1.getTabCount() > 0) tabLayout1.removeAllTabs();
+        getSupportFragmentManager().popBackStack("home", FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        loadFragment(FragmentCategoryList.getInstace("0"), R.id.fl_category);
+
+
+    }
+
+
 }

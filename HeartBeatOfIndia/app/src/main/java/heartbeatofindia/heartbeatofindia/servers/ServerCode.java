@@ -22,6 +22,7 @@ public interface ServerCode {
    int GET_CATEGORY=3;
    int GET_NEWS=4;
    int GET_ALL_CATEGORY=5;
+   int AD=6;
 
 
 

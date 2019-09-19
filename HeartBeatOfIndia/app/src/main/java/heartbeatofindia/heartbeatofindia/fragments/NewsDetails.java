@@ -3,10 +3,13 @@ package heartbeatofindia.heartbeatofindia.fragments;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,6 +23,8 @@ public class NewsDetails extends MyAbstractFragment {
 
     @BindView(R.id.tv_news_des)
     AppCompatTextView tv_news_des;
+    @BindView(R.id.img_feature)
+    AppCompatImageView img_feature;
 
     @Nullable
     @Override
@@ -39,6 +44,9 @@ public class NewsDetails extends MyAbstractFragment {
             if (newsPost != null) {
                 tv_title.setText(newsPost.getTitle());
                 tv_news_des.setText(newsPost.getDes());
+                if (newsPost.getImage()!=null&&newsPost.getImage().length()>0)
+                Picasso.get().load(newsPost.getImage()).placeholder(R.mipmap.ic_launcher)
+                        .into(img_feature);
             }
         }
 

@@ -7,9 +7,10 @@
     android:layout_height="match_parent"
     android:layout_gravity="start"
     android:clickable="true"
+    tools:openDrawer="start"
     android:fitsSystemWindows="true"
     android:focusable="true"
-    tools:openDrawer="start">
+    >
 
     <LinearLayout
         android:id="@+id/root"
@@ -23,6 +24,32 @@
             layout="@layout/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:visibility="gone"
+                android:id="@+id/tabLyout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabBackground="?attr/selectableItemBackground"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/colorAccent"
+             />
+
+            <android.support.design.widget.TabLayout
+                android:visibility="gone"
+                android:id="@+id/tabLyout2"
+                app:tabMode="scrollable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -82,16 +109,17 @@
                 android:id="@+id/tv_login"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:text="@string/login_text"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginLeft="5dp"
             android:id="@+id/ll_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:orientation="horizontal">
 
             <android.support.v7.widget.AppCompatImageView
@@ -107,19 +135,51 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="होम"
                 android:gravity="center|left"
+                android:text="राष्ट्रीय समाचार"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_ad_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="विज्ञापन पोस्ट करें"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
+        <FrameLayout
+            android:id="@+id/fl_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white" />
+            android:background="@color/white"
+            android:visibility="gone" />
         <!--   <android.support.design.widget.NavigationView
                android:id="@+id/navigation"
                android:layout_width="wrap_content"

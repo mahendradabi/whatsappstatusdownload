@@ -9,13 +9,16 @@ import java.util.List;
 
 @Dao
 public interface CategoryDao {
-    @Query("SELECT * FROM category")
+    @Query("SELECT * FROM Category")
     List<Category> getAll();
 
-    @Query("SELECT * FROM Category WHERE cid IN (:cid)")
+    @Query("SELECT * FROM Category WHERE parent_id IN (:cid)")
     List<Category> loadAllByIds(int[] cid);
 
-    @Query("SELECT * FROM category WHERE cid =:cid LIMIT 1")
+    @Query("SELECT * FROM Category WHERE parent_id =:parentID")
+    List<Category> getAllCateByParentID(int parentID);
+
+    @Query("SELECT * FROM Category WHERE cid =:cid LIMIT 1")
     Category findById(int cid);
 
     @Insert
@@ -23,4 +26,7 @@ public interface CategoryDao {
 
     @Delete
     void delete(Category category);
+
+    @Query("DELETE FROM Category")
+    void deleteAll();
 }
